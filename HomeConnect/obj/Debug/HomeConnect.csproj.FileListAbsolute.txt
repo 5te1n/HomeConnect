@@ -1,0 +1,3 @@
+C:\Users\Ben\Desktop\HomeConnect\HouseControl\bin\Debug\HouseControl.exe.config
+C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Debug\HouseControl.exe
+C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Debug\HouseControl.pdb
