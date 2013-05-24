@@ -26,9 +26,9 @@ namespace HouseControl
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
             HouseBuildingLayer hbl = new HouseBuildingLayer();
-            hbl.ShowDialog();
+            this.Visible = false;
+            hbl.ShowDialog(this);
         }
     }
 }
