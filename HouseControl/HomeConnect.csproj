@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HouseControllLayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HouseControllLayer.Designer.cs">
+      <DependentUpon>HouseControllLayer.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenuLayer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     <Compile Include="Room.cs" />
     <EmbeddedResource Include="HouseBuildingLayer.resx">
       <DependentUpon>HouseBuildingLayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HouseControllLayer.resx">
+      <DependentUpon>HouseControllLayer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenuLayer.resx">
       <DependentUpon>MainMenuLayer.cs</DependentUpon>
