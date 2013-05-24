@@ -8,3 +8,14 @@ C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Debug\HouseControl.HouseBuildi
 C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Debug\HouseControl.MainMenuLayer.resources
 C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Debug\HouseControl.Properties.Resources.resources
 C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Debug\HomeConnect.csproj.GenerateResource.Cache
+C:\Users\Stein\Documents\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\bin\Debug\HouseControl.exe.config
+C:\Users\Stein\Documents\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Debug\HouseControl.exe
+C:\Users\Stein\Documents\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Debug\HouseControl.pdb
+C:\Users\Stein\Documents\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Debug\HomeConnect.csprojResolveAssemblyReference.cache
+C:\Users\Stein\Documents\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Debug\HouseControl.HouseBuildingLayer.resources
+C:\Users\Stein\Documents\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Debug\HouseControl.HouseControllLayer.resources
+C:\Users\Stein\Documents\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Debug\HouseControl.MainMenuLayer.resources
+C:\Users\Stein\Documents\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Debug\HomeConnect.csproj.GenerateResource.Cache
+C:\Users\Stein\Documents\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\bin\Debug\HouseControl.exe
+C:\Users\Stein\Documents\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\bin\Debug\HouseControl.pdb
+C:\Users\Stein\Documents\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Debug\HouseControl.Properties.Resources.resources
