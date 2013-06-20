@@ -10,6 +10,7 @@ namespace HouseControl
     class Room
     {
         Point beginningPoint, endPoint;
+        private int offset = 10;
 
         public Point BeginningPoint{
             get { return beginningPoint; }
@@ -21,6 +22,27 @@ namespace HouseControl
             get { return endPoint; } 
             set { endPoint = value;}
         }
+
+        public int BeginningOffsetX
+        {
+            get { return beginningPoint.X + offset; }
+        }
+
+        public int BeginningOffsetY
+        {
+            get { return beginningPoint.Y + offset; }
+        }
+
+        public int EndOffsetX
+        {
+            get { return endPoint.X - offset; }
+        }
+
+        public int EndOffsetY
+        {
+            get { return endPoint.Y - offset; }
+        }
+
 
         //TODO: Add Appliance Interface once implemented
                 
@@ -48,14 +70,25 @@ namespace HouseControl
 
         public bool Contains(Point p)
         {
-            return (p.X > beginningPoint.X
-                && p.X < endPoint.X
-                && p.Y > beginningPoint.Y
-                && p.Y < endPoint.Y);
+            return (p.X >= beginningPoint.X + offset
+                && p.X <= endPoint.X - offset
+                && p.Y >= beginningPoint.Y + offset
+                && p.Y <= endPoint.Y - offset);
+        }
+
+        public bool Intersects(Room r)
+        {
+            Rectangle ri = new Rectangle(BeginningOffsetX, BeginningOffsetY, Width()- offset, Height()- offset);
+            return ri.IntersectsWith(new Rectangle(r.BeginningOffsetX, r.BeginningOffsetY, r.Width() - offset, r.Height() - offset));
+            /*
+            return (Contains(r.BeginningPoint) 
+                || Contains(r.EndPoint) 
+                || Contains(new Point(r.BeginningPoint.X+Width(), r.BeginningPoint.Y)) 
+                || Contains(new Point(r.EndPoint.X-Width(), r.EndPoint.Y)));*/
         }
 
         // Since EndPoint can be in any of the four rectangle corners while dragging, this
-        // function is needed to return the 
+        // function is needed to return the UpperLeft point
         public Point ReturnDrawReferencePoint()
         {
             if (endPoint.Y < beginningPoint.Y)
