@@ -12,22 +12,15 @@ namespace HouseControl
 {
     public partial class HouseBuildingLayer : Form
     {
-        bool isDrawingRectangle;
-        LinkedList<Room> roomList;          // Contains all the rooms that currently exist. Used for XML exporting
-        Room newRoom;                       // Temporary room used when the user is drawing room rectangles.
-
         private enum DESIGN_STATE {ROOM, REMOVE_OBJECT, DOOR  }
-        int current_state;
 
-        int penSize = 10;
+        HouseBuildingFunctions internalFunctions;
 
         public HouseBuildingLayer()
         {
-            isDrawingRectangle = false;
-            roomList = new LinkedList<Room>();
-            current_state = (int) DESIGN_STATE.ROOM;
             InitializeComponent();
-            newRoom = new Room();
+            internalFunctions = new HouseBuildingFunctions();
+            roomButton.BackColor = Color.FromKnownColor(KnownColor.ActiveCaption);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -38,24 +31,9 @@ namespace HouseControl
 
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
-            if (isDrawingRectangle)
+            if (internalFunctions.IsDrawingRectangle)
             {
-
-                Point upperLeft = newRoom.ReturnDrawReferencePoint();
-
-                Pen p = new Pen(Color.White, penSize);
-                Graphics g = Graphics.FromImage(pictureBox1.Image);
-                g.DrawRectangle(p, new Rectangle(upperLeft.X, upperLeft.Y, newRoom.Width(), newRoom.Height()));
-
-                newRoom.EndPoint = e.Location;
-
-                upperLeft = newRoom.ReturnDrawReferencePoint();
-
-
-                p = new Pen(Color.Red, penSize);
-                g.DrawRectangle(p, new Rectangle(upperLeft.X, upperLeft.Y, newRoom.Width(), newRoom.Height()));
-
-                this.Refresh();
+                internalFunctions.DrawWalls(Graphics.FromImage(pictureBox1.Image), e.Location);
                 RedrawRooms();
             }
         }
@@ -69,65 +47,28 @@ namespace HouseControl
 
         private void RedrawRooms()
         {
-            foreach (Room roomInList in roomList)
-            {
-                roomInList.CheckOrientation();
-                Pen p = new Pen(Color.Black, penSize);
-                Graphics g = Graphics.FromImage(pictureBox1.Image);
-                g.DrawRectangle(p, new Rectangle(roomInList.BeginningPoint.X, roomInList.BeginningPoint.Y, roomInList.Width(), roomInList.Height()));
-                this.Refresh();
-            }
-        }
-
-        private void RemoveRoom(Room r)
-        {
-            Pen p = new Pen(Color.White, penSize);
-            Graphics g = Graphics.FromImage(pictureBox1.Image);
-            g.DrawRectangle(p, new Rectangle(r.BeginningPoint.X, r.BeginningPoint.Y, r.Width(), r.Height()));
+            internalFunctions.RedrawRooms(Graphics.FromImage(pictureBox1.Image));
             this.Refresh();
-            
-
         }
 
         private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
         {
-            if (isDrawingRectangle)
+            if (internalFunctions.IsDrawingRectangle)
             {
-                bool intersectsPreviousRooms = false;
-
-                isDrawingRectangle = false;
-                newRoom.CheckOrientation();
-
-                roomList.AddLast(newRoom);
-
-                foreach (Room roomInList in roomList)
-                {
-                    if (roomInList.Intersects(newRoom) && roomInList != newRoom)
-                    {
-                        label1.Text = "Fehler: Räume dürfen sich nicht überschneiden!";
-                        intersectsPreviousRooms = true;
-                    }
-                }
-
-                if (intersectsPreviousRooms)
-                {
-                    RemoveRoom(newRoom);
-                    roomList.Remove(newRoom);
-                }
+                if (internalFunctions.CheckRoomCollision(Graphics.FromImage(pictureBox1.Image)))
+                    label1.Text = "Fehler: Räume dürfen sich nicht überschneiden!";
                 else
                     label1.Text = "";
 
                 RedrawRooms();
-                newRoom = new Room();
             }
         }
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
-            if (!isDrawingRectangle && current_state == (int)DESIGN_STATE.ROOM)
+            if (!internalFunctions.IsDrawingRectangle && internalFunctions.InternalState == (int)DESIGN_STATE.ROOM)
             {
-                isDrawingRectangle = true;
-                newRoom.BeginningPoint = (e as MouseEventArgs).Location;
+                internalFunctions.StartRoomMode((e as MouseEventArgs).Location);
 
             }
         }
@@ -135,44 +76,36 @@ namespace HouseControl
         private void roomButton_Click(object sender, EventArgs e)
         {
             ClearButtonColor();
-            this.current_state = (int)DESIGN_STATE.ROOM;
+            internalFunctions.SwitchState((int)DESIGN_STATE.ROOM);
             roomButton.BackColor = Color.FromKnownColor(KnownColor.ActiveCaption);
         }
 
         private void removeButton_Click(object sender, EventArgs e)
         {
             ClearButtonColor();
-            this.current_state = (int)DESIGN_STATE.REMOVE_OBJECT;
+            internalFunctions.SwitchState((int)DESIGN_STATE.REMOVE_OBJECT);
             removeButton.BackColor = Color.FromKnownColor(KnownColor.ActiveCaption);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            if (this.current_state == (int)DESIGN_STATE.REMOVE_OBJECT)
+            if (internalFunctions.InternalState == (int)DESIGN_STATE.REMOVE_OBJECT)
             {
-                Room selectedRoom = null;
-                foreach (Room roomInList in roomList)
-                {
-                    if (roomInList.Contains((e as MouseEventArgs).Location))
-                    {
-                        selectedRoom = roomInList;
-                        break;
-                    }
-                }
+                if(internalFunctions.RoomDeletion(Graphics.FromImage(pictureBox1.Image), (e as MouseEventArgs).Location))
+                RedrawRooms();
+            }
 
-                if(selectedRoom != null)
-                {
-                    roomList.Remove(selectedRoom);
-                    RemoveRoom(selectedRoom);
-                    RedrawRooms();
-                }
+            if (internalFunctions.InternalState == (int)DESIGN_STATE.DOOR)
+            {
+                internalFunctions.PlaceDoor(Graphics.FromImage(pictureBox1.Image), (e as MouseEventArgs).Location);
+                this.Refresh();
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             ClearButtonColor();
-            this.current_state = (int)DESIGN_STATE.DOOR;
+            internalFunctions.SwitchState((int)DESIGN_STATE.DOOR);
             doorButton.BackColor = Color.FromKnownColor(KnownColor.ActiveCaption);
         }
 

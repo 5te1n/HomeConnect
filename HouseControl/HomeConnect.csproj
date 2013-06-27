@@ -50,6 +50,7 @@
     <Compile Include="Herd_Steuerung.Designer.cs">
       <DependentUpon>Herd_Steuerung.cs</DependentUpon>
     </Compile>
+    <Compile Include="HouseBuildingFunctions.cs" />
     <Compile Include="HouseControllLayer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,8 +111,14 @@
     <None Include="Resources\Gluehbirne_OFF.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Button-Previous-icon.png" />
+    <Content Include="Resources\door.png" />
+    <Content Include="Resources\door_down.png" />
+    <Content Include="Resources\door_right.png" />
+    <Content Include="Resources\Eraser-2-icon.png" />
     <Content Include="Resources\Gluehbirne_ON.gif" />
     <Content Include="Resources\Herd_Aus.jpg" />
+    <Content Include="Resources\New-room-icon.png" />
     <Content Include="Resources\Verdunkelndes Grau halb transparent.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
