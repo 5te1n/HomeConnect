@@ -24,6 +24,11 @@ namespace HouseControl
             set { beginningPoint = value;} 
         }
 
+        public Rectangle BoundingBox
+        {
+            get { return new Rectangle(BeginningPoint, new Size(EndPoint.X - BeginningPoint.X, EndPoint.Y - BeginningPoint.Y)); }
+        }
+
         public Point EndPoint 
         {
             get { return endPoint; } 
@@ -149,7 +154,6 @@ namespace HouseControl
                 || Math.Abs(_p.Y - BeginningPoint.Y) <= offset
                 || Math.Abs(_p.X - EndPoint.X) <= offset
                 || Math.Abs(_p.Y - EndPoint.Y) <= offset;
-            return false;
         }
 
         public void AddInterior(Bitmap _g, Point _p)

@@ -23,18 +23,43 @@ namespace HouseControl
             set { position = value; }
         }
         private Bitmap image;
-
+        private Bitmap altImage;
         public Bitmap Image
         {
             get { return image; }
             set { image = value; }
         }
 
-        public Interior(Bitmap _g, Point _p)
+        private bool isConnected;
+
+        public Interior(Bitmap _b, Point _p)
         {
-            image = _g;
+            image = _b;
+            altImage = null;
             position = _p;
-            boundingBox = new Rectangle(_p.X, _p.Y, _g.Width, _g.Height);
+            isConnected = true;
+            boundingBox = new Rectangle(_p.X, _p.Y, _b.Width, _b.Height);
+        }
+
+        // _b is the image used for a disconnected item
+        public Interior(Bitmap _b, Bitmap _alt, Point _p)
+        {
+            image = _b;
+            altImage = _alt;
+            position = _p;
+            isConnected = false;
+            boundingBox = new Rectangle(_p.X, _p.Y, _b.Width, _b.Height);
+        }
+
+        //used for simulating the connection of items
+        public void SwitchImage()
+        {
+            if (!isConnected)
+            {
+                Bitmap temp = image;
+                image = altImage;
+                altImage = temp;
+            }
         }
     }
 }
