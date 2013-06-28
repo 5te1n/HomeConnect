@@ -10,6 +10,13 @@ namespace HouseControl
     class Room
     {
         Point beginningPoint, endPoint;
+        LinkedList<Interior> interior;
+
+        internal LinkedList<Interior> Interior
+        {
+            get { return interior; }
+        }
+
         private int offset = 10;
 
         public Point BeginningPoint{
@@ -50,6 +57,7 @@ namespace HouseControl
         {
             beginningPoint = new Point();
             endPoint = new Point();
+            interior = new LinkedList<Interior>();
         }
 
         public Room(Point _bP, Point _eP)
@@ -133,6 +141,25 @@ namespace HouseControl
                 beginningPoint.X = endPoint.X;
                 endPoint.X = temp.X;
             }
+        }
+
+        public bool IsWall(Point _p)
+        {
+            return Math.Abs(_p.X - BeginningPoint.X) <= offset
+                || Math.Abs(_p.Y - BeginningPoint.Y) <= offset
+                || Math.Abs(_p.X - EndPoint.X) <= offset
+                || Math.Abs(_p.Y - EndPoint.Y) <= offset;
+            return false;
+        }
+
+        public void AddInterior(Bitmap _g, Point _p)
+        {
+            interior.AddFirst(new Interior(_g, _p));
+        }
+
+        public void ClearInterior()
+        {
+            interior = new LinkedList<Interior>();
         }
     }
 }

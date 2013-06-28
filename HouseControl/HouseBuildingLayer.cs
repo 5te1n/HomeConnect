@@ -13,7 +13,6 @@ namespace HouseControl
     public partial class HouseBuildingLayer : Form
     {
         private enum DESIGN_STATE {ROOM, REMOVE_OBJECT, DOOR  }
-
         HouseBuildingFunctions internalFunctions;
 
         public HouseBuildingLayer()
@@ -47,10 +46,11 @@ namespace HouseControl
 
         private void RedrawRooms()
         {
+            internalFunctions.RedrawInterior(Graphics.FromImage(pictureBox1.Image));
             internalFunctions.RedrawRooms(Graphics.FromImage(pictureBox1.Image));
             this.Refresh();
         }
-
+                
         private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
         {
             if (internalFunctions.IsDrawingRectangle)
@@ -91,13 +91,16 @@ namespace HouseControl
         {
             if (internalFunctions.InternalState == (int)DESIGN_STATE.REMOVE_OBJECT)
             {
-                if(internalFunctions.RoomDeletion(Graphics.FromImage(pictureBox1.Image), (e as MouseEventArgs).Location))
-                RedrawRooms();
+                if (internalFunctions.RoomDeletion(Graphics.FromImage(pictureBox1.Image), (e as MouseEventArgs).Location))
+                {
+                    internalFunctions.ClearDrawSpace(Graphics.FromImage(pictureBox1.Image));
+                    RedrawRooms();
+                }
             }
 
             if (internalFunctions.InternalState == (int)DESIGN_STATE.DOOR)
             {
-                internalFunctions.PlaceDoor(Graphics.FromImage(pictureBox1.Image), (e as MouseEventArgs).Location);
+                label1.Text = internalFunctions.PlaceDoor(Graphics.FromImage(pictureBox1.Image), (e as MouseEventArgs).Location);
                 this.Refresh();
             }
         }

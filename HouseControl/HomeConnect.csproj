@@ -57,6 +57,7 @@
     <Compile Include="HouseControllLayer.Designer.cs">
       <DependentUpon>HouseControllLayer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interior.cs" />
     <Compile Include="MainMenuLayer.cs">
       <SubType>Form</SubType>
     </Compile>
