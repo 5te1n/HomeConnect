@@ -57,6 +57,7 @@
     <Compile Include="HouseControllLayer.Designer.cs">
       <DependentUpon>HouseControllLayer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interior.cs" />
     <Compile Include="MainMenuLayer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,14 +116,35 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Button-Previous-icon.png" />
+    <Content Include="Resources\connect.png" />
     <Content Include="Resources\Control Knob.png" />
     <Content Include="Resources\door.png" />
     <Content Include="Resources\door_down.png" />
     <Content Include="Resources\door_right.png" />
     <Content Include="Resources\Eraser-2-icon.png" />
+    <Content Include="Resources\fridgebig.png" />
+    <Content Include="Resources\fridgeerror.png" />
+    <Content Include="Resources\fridge_icon.png" />
     <Content Include="Resources\Gluehbirne_ON.gif" />
+    <Content Include="Resources\heizungerror.png" />
     <Content Include="Resources\Herd_Aus.png" />
+    <Content Include="Resources\icon-heizung.gif" />
+    <Content Include="Resources\icon-heizungsmall.png" />
+    <Content Include="Resources\lightbulb.png" />
+    <Content Include="Resources\lightbulbbig.png" />
+    <Content Include="Resources\lightbulberror.png" />
+    <Content Include="Resources\Microwave.png" />
+    <Content Include="Resources\Microwavebig.png" />
+    <Content Include="Resources\Microwaveerror.png" />
     <Content Include="Resources\New-room-icon.png" />
+    <Content Include="Resources\PC.png" />
+    <Content Include="Resources\PCbig.png" />
+    <Content Include="Resources\pcerror.png" />
+    <Content Include="Resources\scale.png" />
+    <Content Include="Resources\transform-move-icon.png" />
+    <Content Include="Resources\TV.png" />
+    <Content Include="Resources\TVbig.png" />
+    <Content Include="Resources\TVerror.png" />
     <Content Include="Resources\OK-icon.png" />
     <Content Include="Resources\Verdunkelndes Grau halb transparent.png" />
   </ItemGroup>
