@@ -20,7 +20,7 @@ namespace HouseControl
         {
             InitializeComponent();
             m_HerdSteuerung = new Herd_Steuerung();
-            label1.BackColor = Color.FromArgb(20, 200, 20, 20);
+            
         }
 
         private void Light1_Click(object sender, EventArgs e)
@@ -31,9 +31,18 @@ namespace HouseControl
             IS_LIGHT_ON[0] = !IS_LIGHT_ON[0];
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void Herd_Click(object sender, EventArgs e)
         {
-            m_HerdSteuerung.ShowDialog(this);
+            pictureBoxVerdunkeln.BringToFront();
+            pictureBoxVerdunkeln.Show();
+
+            m_HerdSteuerung.Show(this);
+        }
+
+        public void close_Herd()
+        {
+            m_HerdSteuerung.Hide();
+            pictureBoxVerdunkeln.Hide();
         }
     }
 }
