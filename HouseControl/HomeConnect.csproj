@@ -77,6 +77,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Room.cs" />
+    <EmbeddedResource Include="Herd_Steuerung.resx">
+      <DependentUpon>Herd_Steuerung.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HouseBuildingLayer.resx">
       <DependentUpon>HouseBuildingLayer.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,13 +115,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Button-Previous-icon.png" />
+    <Content Include="Resources\Control Knob.png" />
     <Content Include="Resources\door.png" />
     <Content Include="Resources\door_down.png" />
     <Content Include="Resources\door_right.png" />
     <Content Include="Resources\Eraser-2-icon.png" />
     <Content Include="Resources\Gluehbirne_ON.gif" />
-    <Content Include="Resources\Herd_Aus.jpg" />
+    <Content Include="Resources\Herd_Aus.png" />
     <Content Include="Resources\New-room-icon.png" />
+    <Content Include="Resources\OK-icon.png" />
     <Content Include="Resources\Verdunkelndes Grau halb transparent.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
