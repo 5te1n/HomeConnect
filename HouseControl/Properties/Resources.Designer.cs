@@ -90,15 +90,7 @@ namespace HouseControl.Properties {
             }
         }
         
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Control_Knob {
-            get {
-                object obj = ResourceManager.GetObject("Control_Knob", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
+        
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -190,15 +182,7 @@ namespace HouseControl.Properties {
             }
         }
         
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap OK_icon {
-            get {
-                object obj = ResourceManager.GetObject("OK_icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
+        
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.

@@ -24,3 +24,15 @@ D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Release\HouseCont
 C:\Users\Stein\Desktop\Interactive Systeme export\HouseControl\bin\Release\HouseControl.exe.config
 C:\Users\Stein\Desktop\Interactive Systeme export\HouseControl\obj\Release\HouseControl.exe
 C:\Users\Stein\Desktop\Interactive Systeme export\HouseControl\obj\Release\HouseControl.pdb
+C:\Users\Stein\Desktop\Neuer Ordner (6)\HomeConnect\HouseControl\bin\Release\HouseControl.exe.config
+C:\Users\Stein\Desktop\Neuer Ordner (6)\HomeConnect\HouseControl\obj\Release\HouseControl.exe
+C:\Users\Stein\Desktop\Neuer Ordner (6)\HomeConnect\HouseControl\obj\Release\HouseControl.pdb
+C:\Users\Stein\Desktop\Neuer Ordner (6)\HomeConnect\HouseControl\obj\Release\HomeConnect.csprojResolveAssemblyReference.cache
+C:\Users\Stein\Desktop\Neuer Ordner (6)\HomeConnect\HouseControl\obj\Release\HouseControl.Herd_Steuerung.resources
+C:\Users\Stein\Desktop\Neuer Ordner (6)\HomeConnect\HouseControl\obj\Release\HouseControl.HouseBuildingLayer.resources
+C:\Users\Stein\Desktop\Neuer Ordner (6)\HomeConnect\HouseControl\obj\Release\HouseControl.HouseControllLayer.resources
+C:\Users\Stein\Desktop\Neuer Ordner (6)\HomeConnect\HouseControl\obj\Release\HouseControl.MainMenuLayer.resources
+C:\Users\Stein\Desktop\Neuer Ordner (6)\HomeConnect\HouseControl\obj\Release\HouseControl.Properties.Resources.resources
+C:\Users\Stein\Desktop\Neuer Ordner (6)\HomeConnect\HouseControl\obj\Release\HomeConnect.csproj.GenerateResource.Cache
+C:\Users\Stein\Desktop\Neuer Ordner (6)\HomeConnect\HouseControl\bin\Release\HouseControl.exe
+C:\Users\Stein\Desktop\Neuer Ordner (6)\HomeConnect\HouseControl\bin\Release\HouseControl.pdb
