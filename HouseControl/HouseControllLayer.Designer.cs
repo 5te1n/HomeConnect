@@ -32,10 +32,9 @@
         {
             this.Herd = new System.Windows.Forms.PictureBox();
             this.Light1 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxVerdunkeln = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Herd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Light1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVerdunkeln)).BeginInit();
             this.SuspendLayout();
             // 
             // Herd
@@ -47,46 +46,44 @@
             this.Herd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Herd.TabIndex = 1;
             this.Herd.TabStop = false;
-            this.Herd.Click += new System.EventHandler(this.Herd_Click);
+            this.Herd.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Light1
             // 
             this.Light1.ErrorImage = null;
             this.Light1.Image = global::HouseControl.Properties.Resources.Gluehbirne_OFF;
-            this.Light1.Location = new System.Drawing.Point(142, 102);
+            this.Light1.Location = new System.Drawing.Point(285, 92);
             this.Light1.Name = "Light1";
-            this.Light1.Size = new System.Drawing.Size(109, 95);
+            this.Light1.Size = new System.Drawing.Size(109, 87);
             this.Light1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Light1.TabIndex = 0;
             this.Light1.TabStop = false;
             this.Light1.Click += new System.EventHandler(this.Light1_Click);
             // 
-            // pictureBoxVerdunkeln
+            // label1
             // 
-            this.pictureBoxVerdunkeln.Image = global::HouseControl.Properties.Resources.Verdunkelndes_Grau_halb_transparent;
-            this.pictureBoxVerdunkeln.Location = new System.Drawing.Point(0, 0);
-            this.pictureBoxVerdunkeln.Name = "pictureBoxVerdunkeln";
-            this.pictureBoxVerdunkeln.Size = new System.Drawing.Size(1366, 768);
-            this.pictureBoxVerdunkeln.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxVerdunkeln.TabIndex = 2;
-            this.pictureBoxVerdunkeln.TabStop = false;
-            this.pictureBoxVerdunkeln.Visible = false;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(309, 135);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "label1";
             // 
             // HouseControllLayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Herd);
             this.Controls.Add(this.Light1);
-            this.Controls.Add(this.pictureBoxVerdunkeln);
             this.Name = "HouseControllLayer";
             this.Text = "HouseControllLayer";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.Herd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Light1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVerdunkeln)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -94,6 +91,6 @@
 
         private System.Windows.Forms.PictureBox Light1;
         private System.Windows.Forms.PictureBox Herd;
-        private System.Windows.Forms.PictureBox pictureBoxVerdunkeln;
+        private System.Windows.Forms.Label label1;
     }
 }
