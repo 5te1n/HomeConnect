@@ -9,3 +9,6 @@ C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Debug\HouseControl.Properties.
 C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Debug\HomeConnect.csproj.GenerateResource.Cache
 C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Debug\HouseControl.exe
 C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Debug\HouseControl.pdb
+C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Debug\HomeConnect.csprojResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Debug\HouseControl.Eingangstuer_Steuerung.resources
+C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Debug\HouseControl.HouseBuilderLoading.resources

@@ -32,6 +32,13 @@ namespace HouseControl
         }
 
         private bool isConnected;
+        private bool isDoor;
+
+        public bool IsDoor
+        {
+            get { return isDoor; }
+            set { isDoor = value; }
+        }
 
         public bool IsConnected
         {
@@ -40,12 +47,13 @@ namespace HouseControl
 
         private int internalScaling = 1;
 
-        public Interior(Bitmap _b, Point _p)
+        public Interior(Bitmap _b, Point _p, bool door)
         {
             image = _b;
             altImage = null;
             position = _p;
             isConnected = true;
+            isDoor = door;
             boundingBox = new Rectangle(_p.X, _p.Y, _b.Width ,_b.Height);
         }
 

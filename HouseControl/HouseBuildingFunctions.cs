@@ -10,13 +10,16 @@ namespace HouseControl
     class HouseBuildingFunctions
     {
         bool isDrawingRectangle;
-        int penSize = 10;
+        int penSize = 6;
+        int maxWallLength = 100;
 
         LinkedList<Room> roomList;          // Contains all the rooms that currently exist. Used for XML exporting
         Room newRoom;                       // Temporary room used when the user is drawing room rectangles.
         
         private enum DESIGN_STATE { ROOM, REMOVE_OBJECT, DOOR, MOVE, SCALE, CONNECT, LIGHT, HEATER, MICROWAVE, FRIDGE, PC, TV }
         int current_state;
+
+        HouseBuilderLoading loadingScreen = null;
 
         public bool IsDrawingRectangle
         {
@@ -43,7 +46,7 @@ namespace HouseControl
 
             Pen p = new Pen(Color.White, penSize);
             Graphics g = _g;
-            g.DrawRectangle(p, new Rectangle(upperLeft.X, upperLeft.Y, newRoom.Width(), newRoom.Height()));
+            g.DrawRectangle(p, new Rectangle(upperLeft.X, upperLeft.Y, newRoom.Width, newRoom.Height));
 
             newRoom.EndPoint = _mousePosition;
 
@@ -51,7 +54,7 @@ namespace HouseControl
 
 
             p = new Pen(Color.Red, penSize);
-            g.DrawRectangle(p, new Rectangle(upperLeft.X, upperLeft.Y, newRoom.Width(), newRoom.Height()));
+            g.DrawRectangle(p, new Rectangle(upperLeft.X, upperLeft.Y, newRoom.Width, newRoom.Height));
 
             //RedrawRooms();
         }
@@ -62,7 +65,7 @@ namespace HouseControl
             {
                 roomInList.CheckOrientation();
                 Pen p = new Pen(Color.Black, penSize);
-                _g.DrawRectangle(p, new Rectangle(roomInList.BeginningPoint.X, roomInList.BeginningPoint.Y, roomInList.Width(), roomInList.Height()));
+                _g.DrawRectangle(p, new Rectangle(roomInList.BeginningPoint.X, roomInList.BeginningPoint.Y, roomInList.Width, roomInList.Height));
 #if DEBUG
                 _g.DrawRectangle(new Pen(Color.Red), roomInList.BoundingBox);
 #endif
@@ -76,7 +79,7 @@ namespace HouseControl
             {
                 foreach (Interior items in roomInList.Interior)
                 {
-                    _g.FillRectangle(new SolidBrush(Color.White), new Rectangle(items.Position.X, items.Position.Y, items.Image.Width, items.Image.Height));
+                    _g.FillRectangle(new SolidBrush(Color.White), new Rectangle(items.Position.X, items.Position.Y, items.BoundingBox.Width, items.BoundingBox.Height));
                     _g.DrawImage(items.Image, items.BoundingBox);
 #if DEBUG
                     _g.DrawRectangle(new Pen(Color.Red), items.BoundingBox);
@@ -102,7 +105,7 @@ namespace HouseControl
         }
 
         //Is called to evaluate the last room placed by user;
-        public bool CheckRoomCollision(Graphics _g)
+        public string CheckRoomCollision(Graphics _g)
         {
             bool intersectsPreviousRooms = false;
 
@@ -110,6 +113,14 @@ namespace HouseControl
             newRoom.CheckOrientation();
 
             roomList.AddFirst(newRoom);
+
+            if (newRoom.Width < maxWallLength || newRoom.Height < maxWallLength)
+            {
+                RemoveRoom(newRoom, _g);
+                roomList.Remove(newRoom);
+                newRoom = new Room();
+                return "Fehler: Der platzierte Raum ist zu klein! Bitte einen größeren Raum erstellen!";
+            }
 
             foreach (Room roomInList in roomList)
             {
@@ -122,11 +133,11 @@ namespace HouseControl
                 RemoveRoom(newRoom, _g);
                 roomList.Remove(newRoom);
                 newRoom = new Room();
-                return true;
+                return "Fehler: Räume dürfen sich nicht überschneiden!";
             }
             else
                 newRoom = new Room();
-                return false;
+                return "";
         }
 
         public bool CheckInteriorCollision(Room _r, Interior _i, Point _p)
@@ -181,6 +192,12 @@ namespace HouseControl
                     }
                     if (selectedItem != null)
                     {
+                        if (!selectedItem.IsDoor)
+                        {
+                            loadingScreen = new HouseBuilderLoading("Verbindungen werden getrennt", 100000);
+                            loadingScreen.ShowDialog();
+                        }
+
                         roomInList.Interior.Remove(selectedItem);
                         return true;
                     }
@@ -189,6 +206,12 @@ namespace HouseControl
 
             if (selectedRoom != null)
             {
+                if (selectedRoom.Interior.Count > 0)
+                {
+                    loadingScreen = new HouseBuilderLoading("Verbindungen werden getrennt", 100000);
+                    loadingScreen.ShowDialog();
+                }
+
                 roomList.Remove(selectedRoom);
                 RemoveRoom(selectedRoom, _g);
                 return true;
@@ -205,42 +228,42 @@ namespace HouseControl
             {
                 case (int) DESIGN_STATE.FRIDGE:
                     if (!_connectionError)
-                        newItem = new Interior(Properties.Resources.fridgebig, _p);
+                        newItem = new Interior(Properties.Resources.fridgebig, _p, false);
                     else
                         newItem = new Interior(Properties.Resources.fridgeerror, Properties.Resources.fridgebig, _p);
                     break;
 
                 case (int) DESIGN_STATE.HEATER:
                     if (!_connectionError)
-                        newItem = new Interior(Properties.Resources.icon_heizung, _p);
+                        newItem = new Interior(Properties.Resources.icon_heizung, _p, false);
                     else
                         newItem = new Interior(Properties.Resources.heizungerror, Properties.Resources.icon_heizung, _p);
                     break;
 
                 case (int) DESIGN_STATE.LIGHT:
                     if (!_connectionError)
-                        newItem = new Interior(Properties.Resources.lightbulbbig, _p);
+                        newItem = new Interior(Properties.Resources.lightbulbbig, _p, false);
                     else
                         newItem = new Interior(Properties.Resources.lightbulberror, Properties.Resources.lightbulbbig, _p);
                     break;
 
                 case (int) DESIGN_STATE.MICROWAVE:
                     if (!_connectionError)
-                        newItem = new Interior(Properties.Resources.Microwavebig, _p);
+                        newItem = new Interior(Properties.Resources.Microwavebig, _p, false);
                     else
                         newItem = new Interior(Properties.Resources.Microwaveerror, Properties.Resources.Microwavebig, _p);
                     break;
 
                 case (int) DESIGN_STATE.PC:
                     if (!_connectionError)
-                        newItem = new Interior(Properties.Resources.PCbig, _p);
+                        newItem = new Interior(Properties.Resources.PCbig, _p, false);
                     else
                         newItem = new Interior(Properties.Resources.pcerror, Properties.Resources.PCbig, _p);
                     break;
 
                 case (int) DESIGN_STATE.TV:
                     if (!_connectionError)
-                        newItem = new Interior(Properties.Resources.TVbig, _p);
+                        newItem = new Interior(Properties.Resources.TVbig, _p, false);
                     else
                         newItem = new Interior(Properties.Resources.TVerror, Properties.Resources.TVbig, _p);
                     break;
@@ -250,7 +273,7 @@ namespace HouseControl
 
             }
 
-            newItem.Resize(2);
+            newItem.Resize(3);
             _p = new Point(_p.X - newItem.BoundingBox.Width / 2, _p.Y - newItem.BoundingBox.Height/2);
             newItem.BoundingBox = new Rectangle(_p.X, _p.Y, newItem.BoundingBox.Width, newItem.BoundingBox.Height);
 
@@ -272,13 +295,19 @@ namespace HouseControl
                             return "Fehler: Objekte dürfen sich nicht überschneiden!";
                     }
 
+                    loadingScreen = new HouseBuilderLoading("Es wird nach Geräten gesucht", 125000);
+                    loadingScreen.ShowDialog();
+
+                    loadingScreen = new HouseBuilderLoading("Gerät wird verbunden");
+                    loadingScreen.ShowDialog();
+
                     _g.DrawImage(_i.Image, _p);
 #if DEBUG
                     _g.DrawRectangle(new Pen(Color.Red), _i.BoundingBox);
 #endif
                     roomInList.AddInterior(_i);
                     if (_connectionError)
-                        return "Fehler: Verbindung des Gerätes ist fehlgeschlagen!";
+                        return "Fehler: Verbindung des Gerätes ist fehlgeschlagen! Benutzen sie das Stromkabel um das Gerät zu verbinden!";
                     else
                         return "";
                 }
@@ -303,8 +332,10 @@ namespace HouseControl
                     && roomInList.BeginningPoint.X < _p.X
                     && roomInList.EndPoint.X > _p.X)
                 {
+                    _p = new Point(_p.X - 35, _p.Y);
+
                     _g.DrawImage(Properties.Resources.door_down, _p);
-                    roomInList.AddInterior(Properties.Resources.door_down, _p);
+                    roomInList.AddInterior(Properties.Resources.door_down, _p, true);
                     return "";
                 }
                 
@@ -314,8 +345,10 @@ namespace HouseControl
                     && roomInList.BeginningPoint.Y < _p.Y
                     && roomInList.EndPoint.Y > _p.Y )
                 {
+                    _p = new Point(_p.X, _p.Y - 35);
+
                     _g.DrawImage(Properties.Resources.door_right, _p);
-                    roomInList.AddInterior(Properties.Resources.door_right, _p);
+                    roomInList.AddInterior(Properties.Resources.door_right, _p, true);
                     return "";
                 }
                 
@@ -331,6 +364,9 @@ namespace HouseControl
                 {
                     if (item.BoundingBox.Contains(_p) && !item.IsConnected)
                     {
+                        loadingScreen = new HouseBuilderLoading("Gerät wird verbunden");
+                        loadingScreen.ShowDialog();
+
                         item.SwitchImage();
                         return "";
                     }

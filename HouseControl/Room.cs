@@ -17,7 +17,7 @@ namespace HouseControl
             get { return interior; }
         }
 
-        private int offset = 10;
+        private int offset = 6;
 
         public Point BeginningPoint{
             get { return beginningPoint; }
@@ -71,14 +71,14 @@ namespace HouseControl
             endPoint = _eP;
         }
 
-        public int Width()
+        public int Width
         {
-            return Math.Abs(endPoint.X - beginningPoint.X);
+            get { return Math.Abs(endPoint.X - beginningPoint.X); }
         }
 
-        public int Height()
+        public int Height
         {
-            return Math.Abs(endPoint.Y - beginningPoint.Y);
+            get{return Math.Abs(endPoint.Y - beginningPoint.Y);}
         }
 
         public bool Contains(Point p)
@@ -91,8 +91,8 @@ namespace HouseControl
 
         public bool Intersects(Room r)
         {
-            Rectangle ri = new Rectangle(BeginningOffsetX, BeginningOffsetY, Width()- offset, Height()- offset);
-            return ri.IntersectsWith(new Rectangle(r.BeginningOffsetX, r.BeginningOffsetY, r.Width() - offset, r.Height() - offset));
+            Rectangle ri = new Rectangle(BeginningOffsetX, BeginningOffsetY, Width- offset, Height- offset);
+            return ri.IntersectsWith(new Rectangle(r.BeginningOffsetX, r.BeginningOffsetY, r.Width - offset, r.Height - offset));
             /*
             return (Contains(r.BeginningPoint) 
                 || Contains(r.EndPoint) 
@@ -156,9 +156,9 @@ namespace HouseControl
                 || Math.Abs(_p.Y - EndPoint.Y) <= offset;
         }
 
-        public void AddInterior(Bitmap _g, Point _p)
+        public void AddInterior(Bitmap _g, Point _p, bool _d)
         {
-            interior.AddFirst(new Interior(_g, _p));
+            interior.AddFirst(new Interior(_g, _p, _d));
         }
 
         public void AddInterior(Interior _i)
