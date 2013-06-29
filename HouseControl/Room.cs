@@ -161,6 +161,11 @@ namespace HouseControl
             interior.AddFirst(new Interior(_g, _p));
         }
 
+        public void AddInterior(Interior _i)
+        {
+            interior.AddLast(_i);
+        }
+
         public void ClearInterior()
         {
             interior = new LinkedList<Interior>();
