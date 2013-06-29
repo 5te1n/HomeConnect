@@ -81,7 +81,7 @@
             // 
             this.button_OK.BackgroundImage = global::HouseControl.Properties.Resources.OK_icon;
             this.button_OK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_OK.Location = new System.Drawing.Point(728, 428);
+            this.button_OK.Location = new System.Drawing.Point(732, 429);
             this.button_OK.Name = "button_OK";
             this.button_OK.Size = new System.Drawing.Size(60, 60);
             this.button_OK.TabIndex = 0;
@@ -163,7 +163,7 @@
             this.m_panel1.Controls.Add(this.m_radioButton10);
             this.m_panel1.Controls.Add(this.m_radioButton12);
             this.m_panel1.Controls.Add(this.m_radioButton11);
-            this.m_panel1.Location = new System.Drawing.Point(408, 214);
+            this.m_panel1.Location = new System.Drawing.Point(412, 214);
             this.m_panel1.Name = "m_panel1";
             this.m_panel1.Size = new System.Drawing.Size(187, 165);
             this.m_panel1.TabIndex = 7;
@@ -175,7 +175,7 @@
             this.m_panel2.Controls.Add(this.m_radioButton20);
             this.m_panel2.Controls.Add(this.m_radioButton22);
             this.m_panel2.Controls.Add(this.m_radioButton21);
-            this.m_panel2.Location = new System.Drawing.Point(408, 43);
+            this.m_panel2.Location = new System.Drawing.Point(412, 43);
             this.m_panel2.Name = "m_panel2";
             this.m_panel2.Size = new System.Drawing.Size(187, 165);
             this.m_panel2.TabIndex = 8;
@@ -244,7 +244,7 @@
             this.m_panel3.Controls.Add(this.m_radioButton30);
             this.m_panel3.Controls.Add(this.m_radioButton32);
             this.m_panel3.Controls.Add(this.m_radioButton31);
-            this.m_panel3.Location = new System.Drawing.Point(601, 214);
+            this.m_panel3.Location = new System.Drawing.Point(605, 214);
             this.m_panel3.Name = "m_panel3";
             this.m_panel3.Size = new System.Drawing.Size(187, 165);
             this.m_panel3.TabIndex = 9;
@@ -313,7 +313,7 @@
             this.m_panel4.Controls.Add(this.m_radioButton40);
             this.m_panel4.Controls.Add(this.m_radioButton42);
             this.m_panel4.Controls.Add(this.m_radioButton41);
-            this.m_panel4.Location = new System.Drawing.Point(601, 43);
+            this.m_panel4.Location = new System.Drawing.Point(605, 43);
             this.m_panel4.Name = "m_panel4";
             this.m_panel4.Size = new System.Drawing.Size(187, 165);
             this.m_panel4.TabIndex = 8;
@@ -446,7 +446,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 500);
+            this.ClientSize = new System.Drawing.Size(804, 501);
             this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.m_Feuer4);

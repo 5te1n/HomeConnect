@@ -13,6 +13,7 @@ namespace HouseControl
     public partial class HouseControllLayer : Form
     {
         Herd_Steuerung m_HerdSteuerung;
+        Eingangstuer_Steuerung m_Eingangstuer_Steuerung;
         
         public bool[] IS_LIGHT_ON = new bool[5] { false, false, false, false, false };
         
@@ -20,6 +21,10 @@ namespace HouseControl
         {
             InitializeComponent();
             m_HerdSteuerung = new Herd_Steuerung();
+            m_Eingangstuer_Steuerung = new Eingangstuer_Steuerung();
+            m_Bells.Parent = m_Eingangstuer;
+            m_Bells.Location = new Point(7, 10);
+            m_Bells.Hide();
             
         }
 
@@ -43,6 +48,26 @@ namespace HouseControl
         {
             m_HerdSteuerung.Hide();
             pictureBoxVerdunkeln.Hide();
+        }
+
+        public void close_Eingangstuer()
+        {
+            m_Eingangstuer_Steuerung.Hide();
+            m_Bells.Hide();
+            pictureBoxVerdunkeln.Hide();
+        }
+
+        private void m_Eingangstuer_Click(object sender, EventArgs e)
+        {
+            pictureBoxVerdunkeln.BringToFront();
+            pictureBoxVerdunkeln.Show();
+
+            m_Eingangstuer_Steuerung.Show(this);
+        }
+
+        private void HouseControllLayer_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.K) m_Bells.Show();
         }
     }
 }
