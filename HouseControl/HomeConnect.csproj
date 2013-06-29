@@ -78,6 +78,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Room.cs" />
+    <EmbeddedResource Include="Herd_Steuerung.resx">
+      <DependentUpon>Herd_Steuerung.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HouseBuildingLayer.resx">
       <DependentUpon>HouseBuildingLayer.cs</DependentUpon>
     </EmbeddedResource>
