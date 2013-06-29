@@ -63,6 +63,9 @@ namespace HouseControl
                 roomInList.CheckOrientation();
                 Pen p = new Pen(Color.Black, penSize);
                 _g.DrawRectangle(p, new Rectangle(roomInList.BeginningPoint.X, roomInList.BeginningPoint.Y, roomInList.Width(), roomInList.Height()));
+#if DEBUG
+                _g.DrawRectangle(new Pen(Color.Red), roomInList.BoundingBox);
+#endif
                                 
             }
         }
@@ -74,7 +77,10 @@ namespace HouseControl
                 foreach (Interior items in roomInList.Interior)
                 {
                     _g.FillRectangle(new SolidBrush(Color.White), new Rectangle(items.Position.X, items.Position.Y, items.Image.Width, items.Image.Height));
-                    _g.DrawImage(items.Image, items.Position);
+                    _g.DrawImage(items.Image, items.BoundingBox);
+#if DEBUG
+                    _g.DrawRectangle(new Pen(Color.Red), items.BoundingBox);
+#endif
                 }
             }
         }
@@ -130,6 +136,18 @@ namespace HouseControl
                 return true;
 
             return false;
+        }
+
+        public bool CheckInteriorCollision(Room _r, Interior _onField, Interior _newInterior, Point _p)
+        {
+            bool interiorCollision = _onField.BoundingBox.IntersectsWith(_newInterior.BoundingBox) || _newInterior.BoundingBox.IntersectsWith(_onField.BoundingBox) ;
+
+            return interiorCollision;
+        }
+
+        public bool CheckInteriorWallCollision(Room _r, Interior _i)
+        {
+            return !_r.BoundingBox.Contains(_i.BoundingBox);
         }
 
         public void StartRoomMode(Point _p)
@@ -232,6 +250,10 @@ namespace HouseControl
 
             }
 
+            newItem.Resize(2);
+            _p = new Point(_p.X - newItem.BoundingBox.Width / 2, _p.Y - newItem.BoundingBox.Height/2);
+            newItem.BoundingBox = new Rectangle(_p.X, _p.Y, newItem.BoundingBox.Width, newItem.BoundingBox.Height);
+
             return PlaceInterior(_g, newItem, _p, _connectionError);
         }
 
@@ -239,16 +261,22 @@ namespace HouseControl
         {
             foreach (Room roomInList in roomList)
             {
-                if (roomInList.BoundingBox.Contains(_p))
+                if (roomInList.BoundingBox.Contains(_i.Position))
                 {
+                    if(CheckInteriorWallCollision(roomInList, _i))
+                        return "Fehler: Objekte dürfen die Wände nicht schneiden!";
+
                     foreach (Interior item in roomInList.Interior)
                     {
-                        if (CheckInteriorCollision(roomInList, item, _p))
+                        if (CheckInteriorCollision(roomInList, item, _i, _p))
                             return "Fehler: Objekte dürfen sich nicht überschneiden!";
                     }
 
                     _g.DrawImage(_i.Image, _p);
-                    roomInList.AddInterior(_i.Image, _p);
+#if DEBUG
+                    _g.DrawRectangle(new Pen(Color.Red), _i.BoundingBox);
+#endif
+                    roomInList.AddInterior(_i);
                     if (_connectionError)
                         return "Fehler: Verbindung des Gerätes ist fehlgeschlagen!";
                     else
@@ -293,6 +321,23 @@ namespace HouseControl
                 
             }
             return "Fehler: Türen müssen an Wänden platziert werden!";
+        }
+
+        public string ConnectDevice(Graphics _g, Point _p)
+        {
+            foreach (Room roomInList in roomList)
+            {
+                foreach (Interior item in roomInList.Interior)
+                {
+                    if (item.BoundingBox.Contains(_p) && !item.IsConnected)
+                    {
+                        item.SwitchImage();
+                        return "";
+                    }
+                }
+            }
+
+            return "Fehler: Es wurde kein defektes Gerät ausgewählt!";
         }
     }
 }

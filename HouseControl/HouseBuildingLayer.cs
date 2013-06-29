@@ -101,7 +101,8 @@ namespace HouseControl
 
             else if (internalFunctions.InternalState == (int)DESIGN_STATE.CONNECT)
             {
-                //CONNECTION CODE
+                label1.Text = internalFunctions.ConnectDevice(Graphics.FromImage(pictureBox1.Image), (e as MouseEventArgs).Location);
+                RedrawRooms();
             }
 
             else if (internalFunctions.InternalState != (int)DESIGN_STATE.ROOM
