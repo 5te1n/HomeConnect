@@ -62,6 +62,12 @@
     <Compile Include="Herd_Steuerung.Designer.cs">
       <DependentUpon>Herd_Steuerung.cs</DependentUpon>
     </Compile>
+    <Compile Include="HouseBuilderLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HouseBuilderLoading.Designer.cs">
+      <DependentUpon>HouseBuilderLoading.cs</DependentUpon>
+    </Compile>
     <Compile Include="HouseBuildingFunctions.cs" />
     <Compile Include="HouseControllLayer.cs">
       <SubType>Form</SubType>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Herd_Steuerung.resx">
       <DependentUpon>Herd_Steuerung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HouseBuilderLoading.resx">
+      <DependentUpon>HouseBuilderLoading.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HouseBuildingLayer.resx">
       <DependentUpon>HouseBuildingLayer.cs</DependentUpon>

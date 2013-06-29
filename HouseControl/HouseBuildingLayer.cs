@@ -14,6 +14,7 @@ namespace HouseControl
     {
         private enum DESIGN_STATE {ROOM, REMOVE_OBJECT, DOOR, MOVE, SCALE, CONNECT, LIGHT, HEATER, MICROWAVE, FRIDGE, PC, TV  }
         HouseBuildingFunctions internalFunctions;
+        HouseBuilderLoading loadingScreen = null;
 
         public HouseBuildingLayer()
         {
@@ -24,6 +25,9 @@ namespace HouseControl
 
         private void button1_Click(object sender, EventArgs e)
         {
+            loadingScreen = new HouseBuilderLoading("Grundriss wird gespeichert");
+            loadingScreen.ShowDialog(this);
+            
             this.Visible = false;
             this.Owner.Visible = true;
         }
@@ -64,10 +68,7 @@ namespace HouseControl
         {
             if (internalFunctions.IsDrawingRectangle)
             {
-                if (internalFunctions.CheckRoomCollision(Graphics.FromImage(pictureBox1.Image)))
-                    label1.Text = "Fehler: Räume dürfen sich nicht überschneiden!";
-                else
-                    label1.Text = "";
+                label1.Text = internalFunctions.CheckRoomCollision(Graphics.FromImage(pictureBox1.Image));
 
                 RedrawRooms();
             }

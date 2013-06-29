@@ -23,3 +23,5 @@ D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Release\HouseCont
 D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Release\HouseControl.Properties.Resources.resources
 D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Release\HomeConnect.csproj.GenerateResource.Cache
 D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Release\HouseControl.Eingangstuer_Steuerung.resources
+C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Release\HouseControl.Eingangstuer_Steuerung.resources
+C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Release\HouseControl.HouseBuilderLoading.resources
