@@ -9,3 +9,19 @@ C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Debug\HouseControl.Properties.
 C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Debug\HomeConnect.csproj.GenerateResource.Cache
 C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Debug\HouseControl.exe
 C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Debug\HouseControl.pdb
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\bin\Debug\HouseControl.exe.config
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Debug\HouseControl.exe
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Debug\HouseControl.pdb
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\bin\Debug\HouseControl.exe
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\bin\Debug\HouseControl.pdb
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Debug\HomeConnect.csprojResolveAssemblyReference.cache
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Debug\HouseControl.Eingangstuer_Steuerung.resources
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Debug\HouseControl.Herd_Steuerung.resources
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Debug\HouseControl.HouseBuildingLayer.resources
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Debug\HouseControl.HouseControllLayer.resources
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Debug\HouseControl.MainMenuLayer.resources
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Debug\HouseControl.Properties.Resources.resources
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Debug\HomeConnect.csproj.GenerateResource.Cache
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\bin\Debug\KnobControl.exe
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\bin\Debug\KnobControl.pdb
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Debug\HouseControl.Heizungs_Steuerung.resources

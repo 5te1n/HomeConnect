@@ -1,0 +1,17 @@
+D:\Andrei\Uni\Interaktive Systeme\KnobControlCode\bin\Debug\KnobControl.exe
+D:\Andrei\Uni\Interaktive Systeme\KnobControlCode\bin\Debug\KnobControl.pdb
+D:\Andrei\Uni\Interaktive Systeme\KnobControlCode\obj\Debug\KnobControl.csprojResolveAssemblyReference.cache
+D:\Andrei\Uni\Interaktive Systeme\KnobControlCode\obj\Debug\knobControl.Form1.resources
+D:\Andrei\Uni\Interaktive Systeme\KnobControlCode\obj\Debug\KnobControl.KnobControl.resources
+D:\Andrei\Uni\Interaktive Systeme\KnobControlCode\obj\Debug\KnobControl.csproj.GenerateResource.Cache
+D:\Andrei\Uni\Interaktive Systeme\KnobControlCode\obj\Debug\KnobControl.exe
+D:\Andrei\Uni\Interaktive Systeme\KnobControlCode\obj\Debug\KnobControl.pdb
+D:\Andrei\Uni\Interaktive Systeme\KnobControlCode\obj\Debug\VolumeControl.Properties.Resources.resources
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\KnobControlCode\bin\Debug\KnobControl.exe
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\KnobControlCode\bin\Debug\KnobControl.pdb
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\KnobControlCode\obj\Debug\knobControl.Form1.resources
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\KnobControlCode\obj\Debug\KnobControl.KnobControl.resources
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\KnobControlCode\obj\Debug\VolumeControl.Properties.Resources.resources
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\KnobControlCode\obj\Debug\KnobControl.csproj.GenerateResource.Cache
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\KnobControlCode\obj\Debug\KnobControl.exe
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\KnobControlCode\obj\Debug\KnobControl.pdb

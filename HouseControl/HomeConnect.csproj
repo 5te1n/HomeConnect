@@ -50,6 +50,12 @@
     <Compile Include="Eingangstuer_Steuerung.Designer.cs">
       <DependentUpon>Eingangstuer_Steuerung.cs</DependentUpon>
     </Compile>
+    <Compile Include="Heizungs_Steuerung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Heizungs_Steuerung.Designer.cs">
+      <DependentUpon>Heizungs_Steuerung.cs</DependentUpon>
+    </Compile>
     <Compile Include="Herd_Steuerung.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     <Compile Include="Room.cs" />
     <EmbeddedResource Include="Eingangstuer_Steuerung.resx">
       <DependentUpon>Eingangstuer_Steuerung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Heizungs_Steuerung.resx">
+      <DependentUpon>Heizungs_Steuerung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Herd_Steuerung.resx">
       <DependentUpon>Herd_Steuerung.cs</DependentUpon>
@@ -160,6 +169,12 @@
     <Content Include="Resources\TVbig.png" />
     <Content Include="Resources\TVerror.png" />
     <Content Include="Resources\Verdunkelndes Grau halb transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KnobControlCode\KnobControl.csproj">
+      <Project>{04123f59-331d-4582-be0d-721feab6050f}</Project>
+      <Name>KnobControl</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

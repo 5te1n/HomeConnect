@@ -36,5 +36,11 @@ namespace HouseControl
             this.Visible = false;
             hbl.ShowDialog(this);
         }
+
+        public void close_House_Control()
+        {
+            m_HouseControllLayer.Hide();
+            this.Activate();
+        }
     }
 }

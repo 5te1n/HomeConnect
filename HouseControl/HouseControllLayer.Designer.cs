@@ -30,11 +30,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HouseControllLayer));
+            this.m_Heizung = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.m_Bells = new System.Windows.Forms.PictureBox();
             this.m_Eingangstuer = new System.Windows.Forms.PictureBox();
             this.Herd = new System.Windows.Forms.PictureBox();
             this.Light1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxVerdunkeln = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.m_Heizung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Bells)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Eingangstuer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Herd)).BeginInit();
@@ -42,76 +46,79 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVerdunkeln)).BeginInit();
             this.SuspendLayout();
             // 
+            // m_Heizung
+            // 
+            this.m_Heizung.Image = global::HouseControl.Properties.Resources.icon_heizung;
+            resources.ApplyResources(this.m_Heizung, "m_Heizung");
+            this.m_Heizung.Name = "m_Heizung";
+            this.m_Heizung.TabStop = false;
+            this.m_Heizung.Click += new System.EventHandler(this.m_Heizung_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Control;
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // m_Bells
             // 
             this.m_Bells.BackColor = System.Drawing.Color.Transparent;
             this.m_Bells.Image = global::HouseControl.Properties.Resources.bells;
-            this.m_Bells.Location = new System.Drawing.Point(159, 249);
+            resources.ApplyResources(this.m_Bells, "m_Bells");
             this.m_Bells.Name = "m_Bells";
-            this.m_Bells.Size = new System.Drawing.Size(62, 65);
-            this.m_Bells.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.m_Bells.TabIndex = 4;
             this.m_Bells.TabStop = false;
             this.m_Bells.Click += new System.EventHandler(this.m_Eingangstuer_Click);
             // 
             // m_Eingangstuer
             // 
             this.m_Eingangstuer.Image = global::HouseControl.Properties.Resources.Eingangstuer;
-            this.m_Eingangstuer.Location = new System.Drawing.Point(159, 222);
+            resources.ApplyResources(this.m_Eingangstuer, "m_Eingangstuer");
             this.m_Eingangstuer.Name = "m_Eingangstuer";
-            this.m_Eingangstuer.Size = new System.Drawing.Size(72, 121);
-            this.m_Eingangstuer.TabIndex = 3;
             this.m_Eingangstuer.TabStop = false;
             this.m_Eingangstuer.Click += new System.EventHandler(this.m_Eingangstuer_Click);
             // 
             // Herd
             // 
             this.Herd.Image = global::HouseControl.Properties.Resources.Herd_Aus;
-            this.Herd.Location = new System.Drawing.Point(677, 92);
+            resources.ApplyResources(this.Herd, "Herd");
             this.Herd.Name = "Herd";
-            this.Herd.Size = new System.Drawing.Size(115, 105);
-            this.Herd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Herd.TabIndex = 1;
             this.Herd.TabStop = false;
             this.Herd.Click += new System.EventHandler(this.Herd_Click);
             // 
             // Light1
             // 
-            this.Light1.ErrorImage = null;
+            resources.ApplyResources(this.Light1, "Light1");
             this.Light1.Image = global::HouseControl.Properties.Resources.Gluehbirne_OFF;
-            this.Light1.Location = new System.Drawing.Point(142, 102);
             this.Light1.Name = "Light1";
-            this.Light1.Size = new System.Drawing.Size(109, 95);
-            this.Light1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Light1.TabIndex = 0;
             this.Light1.TabStop = false;
             this.Light1.Click += new System.EventHandler(this.Light1_Click);
             // 
             // pictureBoxVerdunkeln
             // 
             this.pictureBoxVerdunkeln.Image = global::HouseControl.Properties.Resources.Verdunkelndes_Grau_halb_transparent;
-            this.pictureBoxVerdunkeln.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.pictureBoxVerdunkeln, "pictureBoxVerdunkeln");
             this.pictureBoxVerdunkeln.Name = "pictureBoxVerdunkeln";
-            this.pictureBoxVerdunkeln.Size = new System.Drawing.Size(1366, 768);
-            this.pictureBoxVerdunkeln.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxVerdunkeln.TabIndex = 2;
             this.pictureBoxVerdunkeln.TabStop = false;
-            this.pictureBoxVerdunkeln.Visible = false;
             // 
             // HouseControllLayer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ControlBox = false;
+            this.Controls.Add(this.m_Heizung);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.m_Bells);
             this.Controls.Add(this.m_Eingangstuer);
             this.Controls.Add(this.Herd);
             this.Controls.Add(this.Light1);
             this.Controls.Add(this.pictureBoxVerdunkeln);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "HouseControllLayer";
-            this.Text = "HouseControllLayer";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.HouseControllLayer_KeyDown);
+            ((System.ComponentModel.ISupportInitialize)(this.m_Heizung)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Bells)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Eingangstuer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Herd)).EndInit();
@@ -128,5 +135,7 @@
         private System.Windows.Forms.PictureBox pictureBoxVerdunkeln;
         private System.Windows.Forms.PictureBox m_Eingangstuer;
         private System.Windows.Forms.PictureBox m_Bells;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox m_Heizung;
     }
 }
