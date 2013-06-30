@@ -182,6 +182,7 @@
     <Content Include="Resources\PCbig.png" />
     <Content Include="Resources\pcerror.png" />
     <Content Include="Resources\Postbote.jpg" />
+    <Content Include="Resources\Progress Circle.gif" />
     <Content Include="Resources\scale.png" />
     <Content Include="Resources\transform-move-icon.png" />
     <Content Include="Resources\tuer oeffnen.png" />

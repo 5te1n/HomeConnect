@@ -44,6 +44,7 @@
             this.Herd = new System.Windows.Forms.PictureBox();
             this.Light1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxVerdunkeln = new System.Windows.Forms.PictureBox();
+            this.m_Progress_Circel = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.m_Feuer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Washer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Heizung)).BeginInit();
@@ -52,6 +53,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Herd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Light1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVerdunkeln)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_Progress_Circel)).BeginInit();
             this.SuspendLayout();
             // 
             // m_Blink_Timer_Show
@@ -146,11 +148,20 @@
             this.pictureBoxVerdunkeln.Name = "pictureBoxVerdunkeln";
             this.pictureBoxVerdunkeln.TabStop = false;
             // 
+            // m_Progress_Circel
+            // 
+            this.m_Progress_Circel.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.m_Progress_Circel, "m_Progress_Circel");
+            this.m_Progress_Circel.Name = "m_Progress_Circel";
+            this.m_Progress_Circel.TabStop = false;
+            this.m_Progress_Circel.Click += new System.EventHandler(this.m_Washer_Click);
+            // 
             // HouseControllLayer
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
+            this.Controls.Add(this.m_Progress_Circel);
             this.Controls.Add(this.m_Temperatur);
             this.Controls.Add(this.m_Feuer);
             this.Controls.Add(this.m_Washer);
@@ -175,6 +186,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Herd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Light1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVerdunkeln)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_Progress_Circel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,5 +206,6 @@
         private System.Windows.Forms.Timer m_Blink_Timer_Show;
         private System.Windows.Forms.Timer m_Blink_Timer_Hide;
         private System.Windows.Forms.Label m_Temperatur;
+        private System.Windows.Forms.PictureBox m_Progress_Circel;
     }
 }

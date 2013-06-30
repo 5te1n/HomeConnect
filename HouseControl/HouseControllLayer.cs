@@ -28,6 +28,7 @@ namespace HouseControl
             m_Heizungs_Steuerung = new Heizungs_Steuerung();
             m_Heizungs_Steuerung.m_HouseControll = this;
             m_Waschmaschine = new Waschmaschienen_Steuerung();
+            m_Waschmaschine.m_House_Control = this;
 
             m_Bells.Parent = m_Eingangstuer;
             m_Bells.Location = new Point(7, 10);
@@ -37,7 +38,9 @@ namespace HouseControl
             m_Feuer.Location = new Point(18,18);
             m_Feuer.Hide();
 
-            
+            m_Progress_Circel.Parent = m_Washer;
+            m_Progress_Circel.Location = new Point(25,35);
+            m_Progress_Circel.Hide();
             
         }
 
@@ -91,6 +94,25 @@ namespace HouseControl
         {
             m_Waschmaschine.Hide();
             pictureBoxVerdunkeln.Hide();
+        }
+
+        public void show_Waschmaschine_Progress(int mode)
+        {
+            if (mode == 1)
+            {
+                m_Progress_Circel.Show();
+                m_Progress_Circel.Enabled = true;
+            }
+
+            if (mode == 2)
+            {
+                m_Progress_Circel.Enabled = false;
+            }
+
+            if (mode == 3)
+            {
+                m_Progress_Circel.Hide();
+            }
         }
 
         public void Update_Temperatur(int Temp)

@@ -29,17 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Waschmaschienen_Steuerung));
             this.label7 = new System.Windows.Forms.Label();
-            this.m_panel = new System.Windows.Forms.Panel();
-            this.m_Waschmaschinen_Regler = new KnobControl.KnobControl();
-            this.m_Waschmaschine_Picture = new System.Windows.Forms.PictureBox();
-            this.button_OK = new System.Windows.Forms.Button();
             this.m_Progress = new System.Windows.Forms.ProgressBar();
             this.m_Start_Button = new System.Windows.Forms.Button();
             this.m_Timer = new System.Windows.Forms.Timer(this.components);
             this.m_Zeit_Label = new System.Windows.Forms.Label();
+            this.m_panel = new System.Windows.Forms.Panel();
+            this.m_Waschmaschinen_Regler = new KnobControl.KnobControl();
+            this.m_Waschmaschine_Picture = new System.Windows.Forms.PictureBox();
+            this.button_OK = new System.Windows.Forms.Button();
+            this.m_Progress_Circel = new System.Windows.Forms.PictureBox();
+            this.m_Aus_Button = new System.Windows.Forms.Button();
             this.m_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_Waschmaschine_Picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_Progress_Circel)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -52,6 +56,41 @@
             this.label7.Size = new System.Drawing.Size(171, 25);
             this.label7.TabIndex = 16;
             this.label7.Text = "Waschmaschine";
+            // 
+            // m_Progress
+            // 
+            this.m_Progress.Location = new System.Drawing.Point(68, 241);
+            this.m_Progress.Maximum = 5400;
+            this.m_Progress.Name = "m_Progress";
+            this.m_Progress.Size = new System.Drawing.Size(166, 23);
+            this.m_Progress.Step = 1;
+            this.m_Progress.TabIndex = 19;
+            // 
+            // m_Start_Button
+            // 
+            this.m_Start_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_Start_Button.Location = new System.Drawing.Point(68, 313);
+            this.m_Start_Button.Name = "m_Start_Button";
+            this.m_Start_Button.Size = new System.Drawing.Size(166, 64);
+            this.m_Start_Button.TabIndex = 20;
+            this.m_Start_Button.Text = "Start";
+            this.m_Start_Button.UseVisualStyleBackColor = true;
+            this.m_Start_Button.Click += new System.EventHandler(this.m_Start_Button_Click);
+            // 
+            // m_Timer
+            // 
+            this.m_Timer.Interval = 1;
+            this.m_Timer.Tick += new System.EventHandler(this.m_Timer_Tick);
+            // 
+            // m_Zeit_Label
+            // 
+            this.m_Zeit_Label.AutoSize = true;
+            this.m_Zeit_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_Zeit_Label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.m_Zeit_Label.Location = new System.Drawing.Point(85, 267);
+            this.m_Zeit_Label.Name = "m_Zeit_Label";
+            this.m_Zeit_Label.Size = new System.Drawing.Size(0, 31);
+            this.m_Zeit_Label.TabIndex = 21;
             // 
             // m_panel
             // 
@@ -104,47 +143,38 @@
             this.button_OK.UseVisualStyleBackColor = true;
             this.button_OK.Click += new System.EventHandler(this.button_OK_Click);
             // 
-            // m_Progress
+            // m_Progress_Circel
             // 
-            this.m_Progress.Location = new System.Drawing.Point(68, 241);
-            this.m_Progress.Maximum = 5400;
-            this.m_Progress.Name = "m_Progress";
-            this.m_Progress.Size = new System.Drawing.Size(166, 23);
-            this.m_Progress.Step = 1;
-            this.m_Progress.TabIndex = 19;
+            this.m_Progress_Circel.BackColor = System.Drawing.Color.Transparent;
+            this.m_Progress_Circel.Image = ((System.Drawing.Image)(resources.GetObject("m_Progress_Circel.Image")));
+            this.m_Progress_Circel.Location = new System.Drawing.Point(91, 108);
+            this.m_Progress_Circel.Name = "m_Progress_Circel";
+            this.m_Progress_Circel.Size = new System.Drawing.Size(94, 90);
+            this.m_Progress_Circel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.m_Progress_Circel.TabIndex = 22;
+            this.m_Progress_Circel.TabStop = false;
             // 
-            // m_Start_Button
+            // m_Aus_Button
             // 
-            this.m_Start_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_Start_Button.Location = new System.Drawing.Point(68, 313);
-            this.m_Start_Button.Name = "m_Start_Button";
-            this.m_Start_Button.Size = new System.Drawing.Size(166, 64);
-            this.m_Start_Button.TabIndex = 20;
-            this.m_Start_Button.Text = "Start";
-            this.m_Start_Button.UseVisualStyleBackColor = true;
-            this.m_Start_Button.Click += new System.EventHandler(this.m_Start_Button_Click);
-            // 
-            // m_Timer
-            // 
-            this.m_Timer.Interval = 1;
-            this.m_Timer.Tick += new System.EventHandler(this.m_Timer_Tick);
-            // 
-            // m_Zeit_Label
-            // 
-            this.m_Zeit_Label.AutoSize = true;
-            this.m_Zeit_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_Zeit_Label.ForeColor = System.Drawing.Color.MediumBlue;
-            this.m_Zeit_Label.Location = new System.Drawing.Point(85, 267);
-            this.m_Zeit_Label.Name = "m_Zeit_Label";
-            this.m_Zeit_Label.Size = new System.Drawing.Size(128, 31);
-            this.m_Zeit_Label.TabIndex = 21;
-            this.m_Zeit_Label.Text = "02:30:00";
+            this.m_Aus_Button.BackgroundImage = global::HouseControl.Properties.Resources.Turn_Off_icon;
+            this.m_Aus_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.m_Aus_Button.Font = new System.Drawing.Font("Miramonte", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_Aus_Button.ForeColor = System.Drawing.Color.Black;
+            this.m_Aus_Button.Location = new System.Drawing.Point(12, 402);
+            this.m_Aus_Button.Name = "m_Aus_Button";
+            this.m_Aus_Button.Size = new System.Drawing.Size(90, 86);
+            this.m_Aus_Button.TabIndex = 23;
+            this.m_Aus_Button.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.m_Aus_Button.UseVisualStyleBackColor = true;
+            this.m_Aus_Button.Click += new System.EventHandler(this.m_Aus_Button_Click);
             // 
             // Waschmaschienen_Steuerung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 500);
+            this.Controls.Add(this.m_Aus_Button);
+            this.Controls.Add(this.m_Progress_Circel);
             this.Controls.Add(this.m_Zeit_Label);
             this.Controls.Add(this.m_Start_Button);
             this.Controls.Add(this.m_Progress);
@@ -159,6 +189,7 @@
             this.Text = "Waschmaschienen_Steuerung";
             this.m_panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_Waschmaschine_Picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_Progress_Circel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,5 +206,7 @@
         private System.Windows.Forms.Button m_Start_Button;
         private System.Windows.Forms.Timer m_Timer;
         private System.Windows.Forms.Label m_Zeit_Label;
+        private System.Windows.Forms.PictureBox m_Progress_Circel;
+        private System.Windows.Forms.Button m_Aus_Button;
     }
 }
