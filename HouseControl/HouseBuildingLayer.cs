@@ -20,7 +20,7 @@ namespace HouseControl
         {
             InitializeComponent();
             internalFunctions = new HouseBuildingFunctions();
-            doorButton.BackColor = Color.FromKnownColor(KnownColor.ActiveCaption);
+            moveButton.BackColor = Color.FromKnownColor(KnownColor.ActiveCaption);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -207,6 +207,7 @@ namespace HouseControl
             tvButton.BackColor = Color.FromKnownColor(KnownColor.ActiveCaption);
         }
 
+        #endregion
 
         private void washingButton_Click(object sender, EventArgs e)
         {
@@ -215,6 +216,5 @@ namespace HouseControl
             washingButton.BackColor = Color.FromKnownColor(KnownColor.ActiveCaption);
         }
 
-        #endregion
     }
 }

@@ -32,7 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.washingButton = new System.Windows.Forms.Button();
             this.fridgeButton = new System.Windows.Forms.Button();
             this.moveButton = new System.Windows.Forms.Button();
             this.scaleButton = new System.Windows.Forms.Button();
@@ -47,6 +46,7 @@
             this.roomButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.washingButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,17 +75,6 @@
             this.groupBox2.Size = new System.Drawing.Size(50, 479);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
-            // 
-            // washingButton
-            // 
-            this.washingButton.BackColor = System.Drawing.SystemColors.Control;
-            this.washingButton.Image = ((System.Drawing.Image)(resources.GetObject("washingButton.Image")));
-            this.washingButton.Location = new System.Drawing.Point(12, 604);
-            this.washingButton.Name = "washingButton";
-            this.washingButton.Size = new System.Drawing.Size(40, 40);
-            this.washingButton.TabIndex = 18;
-            this.washingButton.UseVisualStyleBackColor = false;
-            this.washingButton.Click += new System.EventHandler(this.washingButton_Click);
             // 
             // fridgeButton
             // 
@@ -247,6 +236,17 @@
             this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
             this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseUp);
             // 
+            // washingButton
+            // 
+            this.washingButton.BackColor = System.Drawing.SystemColors.Control;
+            this.washingButton.Image = ((System.Drawing.Image)(resources.GetObject("washingButton.Image")));
+            this.washingButton.Location = new System.Drawing.Point(12, 604);
+            this.washingButton.Name = "washingButton";
+            this.washingButton.Size = new System.Drawing.Size(40, 40);
+            this.washingButton.TabIndex = 18;
+            this.washingButton.UseVisualStyleBackColor = false;
+            this.washingButton.Click += new System.EventHandler(this.washingButton_Click);
+            // 
             // HouseBuildingLayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -275,7 +275,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "HouseBuildingLayer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Grundrisserstellung";
+            this.Text = "Grundriss Erstellung";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

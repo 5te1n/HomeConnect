@@ -119,6 +119,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HouseControllLayer.resx">
       <DependentUpon>HouseControllLayer.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenuLayer.resx">
       <DependentUpon>MainMenuLayer.cs</DependentUpon>
@@ -166,6 +167,8 @@
     <Content Include="Resources\fridgeerror.png" />
     <Content Include="Resources\fridge_icon.png" />
     <Content Include="Resources\Gluehbirne_ON.gif" />
+    <Content Include="Resources\Grundriss.jpg" />
+    <Content Include="Resources\Grundriss_Verdunkelt.jpg" />
     <Content Include="Resources\heizungerror.png" />
     <Content Include="Resources\Heizung_Aus.jpg" />
     <Content Include="Resources\herd128.jpg" />
