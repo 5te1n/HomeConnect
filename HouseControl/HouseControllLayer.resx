@@ -136,7 +136,7 @@
     <value>NoControl</value>
   </data>
   <data name="m_Temperatur.Location" type="System.Drawing.Point, System.Drawing">
-    <value>377, 76</value>
+    <value>52, 46</value>
   </data>
   <data name="m_Temperatur.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 25</value>
@@ -154,209 +154,109 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;m_Temperatur.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>m_Panel</value>
   </data>
   <data name="&gt;&gt;m_Temperatur.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="m_Panel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="Light3.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="Light3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Light3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>660, 515</value>
+  </data>
+  <data name="Light3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 95</value>
+  </data>
+  <data name="Light3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Light3.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;Light3.Name" xml:space="preserve">
+    <value>Light3</value>
+  </data>
+  <data name="&gt;&gt;Light3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Light3.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="&gt;&gt;Light3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Light4.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="Light4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Light4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 269</value>
+  </data>
+  <data name="Light4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 95</value>
+  </data>
+  <data name="Light4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Light4.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;Light4.Name" xml:space="preserve">
+    <value>Light4</value>
+  </data>
+  <data name="&gt;&gt;Light4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Light4.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="&gt;&gt;Light4.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="m_Feuer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="Light2.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="Light2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="m_Feuer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>695, 114</value>
+  <data name="Light2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>647, 278</value>
   </data>
-  <data name="m_Feuer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 67</value>
+  <data name="Light2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 95</value>
   </data>
-  <data name="m_Feuer.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+  <data name="Light2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
-  <data name="m_Feuer.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="Light2.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
   </data>
-  <data name="&gt;&gt;m_Feuer.Name" xml:space="preserve">
-    <value>m_Feuer</value>
+  <data name="&gt;&gt;Light2.Name" xml:space="preserve">
+    <value>Light2</value>
   </data>
-  <data name="&gt;&gt;m_Feuer.Type" xml:space="preserve">
+  <data name="&gt;&gt;Light2.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;m_Feuer.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;Light2.Parent" xml:space="preserve">
+    <value>m_Panel</value>
   </data>
-  <data name="&gt;&gt;m_Feuer.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Light2.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="m_Washer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="m_Washer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>526, 124</value>
-  </data>
-  <data name="m_Washer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 110</value>
-  </data>
-  <data name="m_Washer.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="m_Washer.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;m_Washer.Name" xml:space="preserve">
-    <value>m_Washer</value>
-  </data>
-  <data name="&gt;&gt;m_Washer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_Washer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;m_Washer.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="m_Heizung.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="m_Heizung.Location" type="System.Drawing.Point, System.Drawing">
-    <value>372, 102</value>
-  </data>
-  <data name="m_Heizung.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 79</value>
-  </data>
-  <data name="m_Heizung.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="m_Heizung.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;m_Heizung.Name" xml:space="preserve">
-    <value>m_Heizung</value>
-  </data>
-  <data name="&gt;&gt;m_Heizung.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_Heizung.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;m_Heizung.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        AAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 40</value>
-  </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="m_Bells.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="m_Bells.Location" type="System.Drawing.Point, System.Drawing">
-    <value>159, 249</value>
-  </data>
-  <data name="m_Bells.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 65</value>
-  </data>
-  <data name="m_Bells.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="m_Bells.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;m_Bells.Name" xml:space="preserve">
-    <value>m_Bells</value>
-  </data>
-  <data name="&gt;&gt;m_Bells.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_Bells.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;m_Bells.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="m_Eingangstuer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="m_Eingangstuer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>159, 222</value>
-  </data>
-  <data name="m_Eingangstuer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 121</value>
-  </data>
-  <data name="m_Eingangstuer.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;m_Eingangstuer.Name" xml:space="preserve">
-    <value>m_Eingangstuer</value>
-  </data>
-  <data name="&gt;&gt;m_Eingangstuer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_Eingangstuer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;m_Eingangstuer.ZOrder" xml:space="preserve">
-    <value>7</value>
   </data>
   <data name="Herd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="Herd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>677, 92</value>
+    <value>1194, 312</value>
   </data>
   <data name="Herd.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 105</value>
@@ -374,70 +274,37 @@
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Herd.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>m_Panel</value>
   </data>
   <data name="&gt;&gt;Herd.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>3</value>
   </data>
-  <data name="Light1.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="Light1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="m_Bells.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="Light1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>142, 102</value>
+  <data name="m_Bells.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 471</value>
   </data>
-  <data name="Light1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 95</value>
+  <data name="m_Bells.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 65</value>
   </data>
-  <data name="Light1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+  <data name="m_Bells.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
-  <data name="Light1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="m_Bells.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;Light1.Name" xml:space="preserve">
-    <value>Light1</value>
+  <data name="&gt;&gt;m_Bells.Name" xml:space="preserve">
+    <value>m_Bells</value>
   </data>
-  <data name="&gt;&gt;Light1.Type" xml:space="preserve">
+  <data name="&gt;&gt;m_Bells.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Light1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;m_Bells.Parent" xml:space="preserve">
+    <value>m_Panel</value>
   </data>
-  <data name="&gt;&gt;Light1.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="pictureBoxVerdunkeln.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBoxVerdunkeln.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="pictureBoxVerdunkeln.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1362, 768</value>
-  </data>
-  <data name="pictureBoxVerdunkeln.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="pictureBoxVerdunkeln.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="pictureBoxVerdunkeln.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVerdunkeln.Name" xml:space="preserve">
-    <value>pictureBoxVerdunkeln</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVerdunkeln.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVerdunkeln.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxVerdunkeln.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="&gt;&gt;m_Bells.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="m_Progress_Circel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1253,8 +1120,11 @@
         fMIonMIqvFZBAAA7
 </value>
   </data>
+  <data name="m_Progress_Circel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="m_Progress_Circel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>548, 155</value>
+    <value>800, 203</value>
   </data>
   <data name="m_Progress_Circel.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 55</value>
@@ -1272,19 +1142,296 @@
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;m_Progress_Circel.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>m_Panel</value>
   </data>
   <data name="&gt;&gt;m_Progress_Circel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="m_Eingangstuer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_Eingangstuer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 444</value>
+  </data>
+  <data name="m_Eingangstuer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 121</value>
+  </data>
+  <data name="m_Eingangstuer.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;m_Eingangstuer.Name" xml:space="preserve">
+    <value>m_Eingangstuer</value>
+  </data>
+  <data name="&gt;&gt;m_Eingangstuer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_Eingangstuer.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="&gt;&gt;m_Eingangstuer.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="m_Heizung.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_Heizung.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 72</value>
+  </data>
+  <data name="m_Heizung.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 79</value>
+  </data>
+  <data name="m_Heizung.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="m_Heizung.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;m_Heizung.Name" xml:space="preserve">
+    <value>m_Heizung</value>
+  </data>
+  <data name="&gt;&gt;m_Heizung.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_Heizung.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="&gt;&gt;m_Heizung.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="Light1.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="Light1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Light1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1027, 375</value>
+  </data>
+  <data name="Light1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 95</value>
+  </data>
+  <data name="Light1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Light1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Light1.Name" xml:space="preserve">
+    <value>Light1</value>
+  </data>
+  <data name="&gt;&gt;Light1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Light1.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="&gt;&gt;Light1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="m_Feuer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_Feuer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1212, 334</value>
+  </data>
+  <data name="m_Feuer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 67</value>
+  </data>
+  <data name="m_Feuer.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="m_Feuer.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;m_Feuer.Name" xml:space="preserve">
+    <value>m_Feuer</value>
+  </data>
+  <data name="&gt;&gt;m_Feuer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_Feuer.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="&gt;&gt;m_Feuer.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="m_Washer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="m_Washer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>778, 172</value>
+  </data>
+  <data name="m_Washer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 110</value>
+  </data>
+  <data name="m_Washer.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="m_Washer.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;m_Washer.Name" xml:space="preserve">
+    <value>m_Washer</value>
+  </data>
+  <data name="&gt;&gt;m_Washer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_Washer.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="&gt;&gt;m_Washer.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="m_Panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 58</value>
+  </data>
+  <data name="m_Panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1342, 679</value>
+  </data>
+  <data name="m_Panel.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;m_Panel.Name" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="&gt;&gt;m_Panel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_Panel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_Panel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 40</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pictureBoxVerdunkeln.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBoxVerdunkeln.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pictureBoxVerdunkeln.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1362, 768</value>
+  </data>
+  <data name="pictureBoxVerdunkeln.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pictureBoxVerdunkeln.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="pictureBoxVerdunkeln.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxVerdunkeln.Name" xml:space="preserve">
+    <value>pictureBoxVerdunkeln</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxVerdunkeln.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxVerdunkeln.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxVerdunkeln.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="m_Alles_Aus_Button.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="m_Alles_Aus_Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1282, 5</value>
+  </data>
+  <data name="m_Alles_Aus_Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 47</value>
+  </data>
+  <data name="m_Alles_Aus_Button.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;m_Alles_Aus_Button.Name" xml:space="preserve">
+    <value>m_Alles_Aus_Button</value>
+  </data>
+  <data name="&gt;&gt;m_Alles_Aus_Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_Alles_Aus_Button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_Alles_Aus_Button.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>58</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1366, 749</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>

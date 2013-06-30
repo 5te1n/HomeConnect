@@ -113,6 +113,12 @@ namespace HouseControl
             {
                 m_Progress_Circel.Hide();
             }
+
+            if (mode == 4)
+            {
+                m_Progress_Circel.Hide();
+                m_Waschmaschine.ShowDialog(this);
+            }
         }
 
         public void Update_Temperatur(int Temp)
@@ -163,6 +169,30 @@ namespace HouseControl
         private void m_Blink_Timer_Hide_Tick(object sender, EventArgs e)
         {
             m_Feuer.Hide();
+        }
+
+        private void Light2_Click(object sender, EventArgs e)
+        {
+            if (IS_LIGHT_ON[1]) Light2.Image = Properties.Resources.Gluehbirne_OFF;
+            if (!IS_LIGHT_ON[1]) Light2.Image = Properties.Resources.Gluehbirne_ON;
+
+            IS_LIGHT_ON[1] = !IS_LIGHT_ON[1];
+        }
+
+        private void Light4_Click(object sender, EventArgs e)
+        {
+            if (IS_LIGHT_ON[3]) Light4.Image = Properties.Resources.Gluehbirne_OFF;
+            if (!IS_LIGHT_ON[3]) Light4.Image = Properties.Resources.Gluehbirne_ON;
+
+            IS_LIGHT_ON[3] = !IS_LIGHT_ON[3];
+        }
+
+        private void Llight3_Click(object sender, EventArgs e)
+        {
+            if (IS_LIGHT_ON[2]) Light3.Image = Properties.Resources.Gluehbirne_OFF;
+            if (!IS_LIGHT_ON[2]) Light3.Image = Properties.Resources.Gluehbirne_ON;
+
+            IS_LIGHT_ON[2] = !IS_LIGHT_ON[2];
         }
     }
 }

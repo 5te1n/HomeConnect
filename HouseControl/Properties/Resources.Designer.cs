@@ -233,6 +233,16 @@ namespace HouseControl.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Grundriss {
+            get {
+                object obj = ResourceManager.GetObject("Grundriss", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Heizung_Aus {
             get {
                 object obj = ResourceManager.GetObject("Heizung_Aus", resourceCulture);

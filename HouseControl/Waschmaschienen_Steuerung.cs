@@ -96,7 +96,7 @@ namespace HouseControl
                 m_Timer.Enabled = false;
                 m_Progress_Circel.Hide();
 
-                m_House_Control.show_Waschmaschine_Progress(3);
+                m_House_Control.show_Waschmaschine_Progress(4);
             }
         }
 
