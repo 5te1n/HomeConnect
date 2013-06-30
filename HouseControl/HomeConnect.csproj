@@ -160,6 +160,7 @@
     <Content Include="Resources\door_right.png" />
     <Content Include="Resources\Eingangstuer.png" />
     <Content Include="Resources\Eraser-2-icon.png" />
+    <Content Include="Resources\Feuer Achtung.png" />
     <Content Include="Resources\fridgebig.png" />
     <Content Include="Resources\fridgeerror.png" />
     <Content Include="Resources\fridge_icon.png" />
@@ -183,6 +184,7 @@
     <Content Include="Resources\scale.png" />
     <Content Include="Resources\transform-move-icon.png" />
     <Content Include="Resources\tuer oeffnen.png" />
+    <Content Include="Resources\Turn-Off-icon.png" />
     <Content Include="Resources\TV.png" />
     <Content Include="Resources\TVbig.png" />
     <Content Include="Resources\TVerror.png" />

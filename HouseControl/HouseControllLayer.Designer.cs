@@ -30,7 +30,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HouseControllLayer));
+            this.m_Feuer = new System.Windows.Forms.PictureBox();
             this.m_Washer = new System.Windows.Forms.PictureBox();
             this.m_Heizung = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -39,6 +41,9 @@
             this.Herd = new System.Windows.Forms.PictureBox();
             this.Light1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxVerdunkeln = new System.Windows.Forms.PictureBox();
+            this.m_Blink_Timer_Show = new System.Windows.Forms.Timer(this.components);
+            this.m_Blink_Timer_Hide = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.m_Feuer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Washer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Heizung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Bells)).BeginInit();
@@ -47,6 +52,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.Light1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVerdunkeln)).BeginInit();
             this.SuspendLayout();
+            // 
+            // m_Feuer
+            // 
+            this.m_Feuer.BackColor = System.Drawing.Color.Transparent;
+            this.m_Feuer.Image = global::HouseControl.Properties.Resources.Feuer_Achtung;
+            resources.ApplyResources(this.m_Feuer, "m_Feuer");
+            this.m_Feuer.Name = "m_Feuer";
+            this.m_Feuer.TabStop = false;
+            this.m_Feuer.Click += new System.EventHandler(this.Herd_Click);
             // 
             // m_Washer
             // 
@@ -112,11 +126,24 @@
             this.pictureBoxVerdunkeln.Name = "pictureBoxVerdunkeln";
             this.pictureBoxVerdunkeln.TabStop = false;
             // 
+            // m_Blink_Timer_Show
+            // 
+            this.m_Blink_Timer_Show.Enabled = true;
+            this.m_Blink_Timer_Show.Interval = 500;
+            this.m_Blink_Timer_Show.Tick += new System.EventHandler(this.m_Blink_Timer_Show_Tick);
+            // 
+            // m_Blink_Timer_Hide
+            // 
+            this.m_Blink_Timer_Hide.Enabled = true;
+            this.m_Blink_Timer_Hide.Interval = 750;
+            this.m_Blink_Timer_Hide.Tick += new System.EventHandler(this.m_Blink_Timer_Hide_Tick);
+            // 
             // HouseControllLayer
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
+            this.Controls.Add(this.m_Feuer);
             this.Controls.Add(this.m_Washer);
             this.Controls.Add(this.m_Heizung);
             this.Controls.Add(this.button1);
@@ -126,10 +153,12 @@
             this.Controls.Add(this.Light1);
             this.Controls.Add(this.pictureBoxVerdunkeln);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "HouseControllLayer";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.HouseControllLayer_KeyDown);
+            ((System.ComponentModel.ISupportInitialize)(this.m_Feuer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Washer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Heizung)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Bells)).EndInit();
@@ -151,5 +180,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox m_Heizung;
         private System.Windows.Forms.PictureBox m_Washer;
+        private System.Windows.Forms.PictureBox m_Feuer;
+        private System.Windows.Forms.Timer m_Blink_Timer_Show;
+        private System.Windows.Forms.Timer m_Blink_Timer_Hide;
     }
 }

@@ -25,7 +25,11 @@ namespace HouseControl
 
         private void button_OK_Click(object sender, EventArgs e)
         {
-            ((HouseControllLayer)Owner).close_Herd();
+            bool fireON = false;
+
+            if (m_Is_Fire1 || m_Is_Fire2 || m_Is_Fire3 || m_Is_Fire4) fireON = true;
+
+            ((HouseControllLayer)Owner).close_Herd(fireON);
             
         }
 
@@ -220,6 +224,14 @@ namespace HouseControl
             if (m_Is_Fire2) m_Feuer2.Hide();
             if (m_Is_Fire3) m_Feuer3.Hide();
             if (m_Is_Fire4) m_Feuer4.Hide();
+        }
+
+        private void m_Aus_Button_Click(object sender, EventArgs e)
+        {
+            m_radioButton10.Checked = true;
+            m_radioButton20.Checked = true;
+            m_radioButton30.Checked = true;
+            m_radioButton40.Checked = true;
         }
     }
 }

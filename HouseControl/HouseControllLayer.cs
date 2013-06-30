@@ -18,6 +18,7 @@ namespace HouseControl
         Waschmaschienen_Steuerung m_Waschmaschine;
         
         public bool[] IS_LIGHT_ON = new bool[5] { false, false, false, false, false };
+        public bool IS_HERD_ON = false;
         
         public HouseControllLayer()
         {
@@ -30,6 +31,10 @@ namespace HouseControl
             m_Bells.Parent = m_Eingangstuer;
             m_Bells.Location = new Point(7, 10);
             m_Bells.Hide();
+
+            m_Feuer.Parent = Herd;
+            m_Feuer.Location = new Point(18,18);
+            m_Feuer.Hide();
             
         }
 
@@ -49,10 +54,18 @@ namespace HouseControl
             m_HerdSteuerung.ShowDialog(this);
         }
 
-        public void close_Herd()
+        public void close_Herd(bool IS_Herd_ON)
         {
             m_HerdSteuerung.Hide();
             pictureBoxVerdunkeln.Hide();
+
+            if (IS_Herd_ON)
+            {
+                this.IS_HERD_ON = true;
+            }
+            else IS_HERD_ON = false;
+
+            m_Feuer.Hide();
         }
 
         public void close_Eingangstuer()
@@ -104,6 +117,19 @@ namespace HouseControl
         {
             pictureBoxVerdunkeln.Show();
             m_Waschmaschine.ShowDialog(this);
+        }
+
+        private void m_Blink_Timer_Show_Tick(object sender, EventArgs e)
+        {
+            if (IS_HERD_ON)
+            {
+                m_Feuer.Show(); 
+            }
+        }
+
+        private void m_Blink_Timer_Hide_Tick(object sender, EventArgs e)
+        {
+            m_Feuer.Hide();
         }
     }
 }

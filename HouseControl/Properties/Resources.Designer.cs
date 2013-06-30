@@ -173,6 +173,16 @@ namespace HouseControl.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Feuer_Achtung {
+            get {
+                object obj = ResourceManager.GetObject("Feuer_Achtung", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fridge_icon {
             get {
                 object obj = ResourceManager.GetObject("fridge_icon", resourceCulture);
@@ -406,6 +416,16 @@ namespace HouseControl.Properties {
         internal static System.Drawing.Bitmap tuer_oeffnen {
             get {
                 object obj = ResourceManager.GetObject("tuer_oeffnen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Turn_Off_icon {
+            get {
+                object obj = ResourceManager.GetObject("Turn_Off_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
