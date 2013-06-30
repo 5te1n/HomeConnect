@@ -151,9 +151,9 @@ namespace KnobControl
 		{
 			
 			// This call is required by the Windows.Forms Form Designer.
-			DottedPen = new Pen(Utility.getDarkColor(this.BackColor,40));
-			DottedPen.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-			DottedPen.DashCap = System.Drawing.Drawing2D.DashCap.Flat;
+            DottedPen = new Pen(Utility.getDarkColor(this.BackColor, 40));
+            DottedPen.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            DottedPen.DashCap = System.Drawing.Drawing2D.DashCap.Flat;
 			
 			InitializeComponent();
 			setDimensions();
@@ -185,6 +185,7 @@ namespace KnobControl
 
 			// Draw pointer arrow that shows knob position 
 			Utility.DrawInsetCircle(ref gOffScreen,new Rectangle(Arrow.X-3 ,Arrow.Y-3,10,10),new Pen(Color.Red));
+            
 			
 			//---------------------------------------------
 			// darw small and large scale                  
@@ -208,10 +209,10 @@ namespace KnobControl
 			g.DrawImage(OffScreenImage,0,0);
 		}
 
-		protected override void OnPaintBackground(PaintEventArgs e)
-		{
-			// Empty To avoid Flickring due do background Drawing.
-		}
+        //protected override void OnPaintBackground(PaintEventArgs e)
+        //{
+        //    // Empty To avoid Flickring due do background Drawing.
+        //}
 		protected override void OnMouseDown(MouseEventArgs e)
 		{
 			if (Utility.isPointinRectangle(new Point(e.X,e.Y),rKnob))
@@ -352,7 +353,7 @@ namespace KnobControl
 
 			// create LinearGradientBrush for creating knob            
 			bKnob = new System.Drawing.Drawing2D.LinearGradientBrush(
-				rKnob,Utility.getLightColor(this.BackColor,55),Utility.getDarkColor(this.BackColor,55),LinearGradientMode.ForwardDiagonal);
+				rKnob,Utility.getLightColor(Color.WhiteSmoke,55),Utility.getDarkColor(Color.DarkBlue,55),LinearGradientMode.ForwardDiagonal);
 			// create LinearGradientBrush for knobPoint                
 			bKnobPoint = new System.Drawing.Drawing2D.LinearGradientBrush(
 				rKnob,Utility.getLightColor(this.BackColor,55),Utility.getDarkColor(this.BackColor,55),LinearGradientMode.ForwardDiagonal);

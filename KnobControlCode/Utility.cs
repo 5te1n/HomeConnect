@@ -60,6 +60,8 @@ namespace KnobControl
 				Rectangle r1 = new Rectangle(r.X +i,r.Y +i,r.Width-i*2,r.Height-i*2);
 				g.DrawArc(p2,r1,-45,180);
 				g.DrawArc(p1,r1,135,180);
+
+                
 			}
 		}
 	}

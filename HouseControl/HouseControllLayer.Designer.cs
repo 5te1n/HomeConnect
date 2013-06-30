@@ -31,6 +31,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HouseControllLayer));
+            this.m_Washer = new System.Windows.Forms.PictureBox();
             this.m_Heizung = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.m_Bells = new System.Windows.Forms.PictureBox();
@@ -38,6 +39,7 @@
             this.Herd = new System.Windows.Forms.PictureBox();
             this.Light1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxVerdunkeln = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.m_Washer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Heizung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Bells)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Eingangstuer)).BeginInit();
@@ -45,6 +47,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.Light1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVerdunkeln)).BeginInit();
             this.SuspendLayout();
+            // 
+            // m_Washer
+            // 
+            this.m_Washer.Image = global::HouseControl.Properties.Resources.washing_machine_icon;
+            resources.ApplyResources(this.m_Washer, "m_Washer");
+            this.m_Washer.Name = "m_Washer";
+            this.m_Washer.TabStop = false;
+            this.m_Washer.Click += new System.EventHandler(this.m_Washer_Click);
             // 
             // m_Heizung
             // 
@@ -107,6 +117,7 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
+            this.Controls.Add(this.m_Washer);
             this.Controls.Add(this.m_Heizung);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.m_Bells);
@@ -119,6 +130,7 @@
             this.MinimizeBox = false;
             this.Name = "HouseControllLayer";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.HouseControllLayer_KeyDown);
+            ((System.ComponentModel.ISupportInitialize)(this.m_Washer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Heizung)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Bells)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Eingangstuer)).EndInit();
@@ -138,5 +150,6 @@
         private System.Windows.Forms.PictureBox m_Bells;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox m_Heizung;
+        private System.Windows.Forms.PictureBox m_Washer;
     }
 }

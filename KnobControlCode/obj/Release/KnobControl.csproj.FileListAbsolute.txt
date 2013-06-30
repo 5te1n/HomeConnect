@@ -1,0 +1,6 @@
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\KnobControlCode\bin\Release\KnobControl.exe
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\KnobControlCode\obj\Release\knobControl.Form1.resources
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\KnobControlCode\obj\Release\KnobControl.KnobControl.resources
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\KnobControlCode\obj\Release\VolumeControl.Properties.Resources.resources
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\KnobControlCode\obj\Release\KnobControl.csproj.GenerateResource.Cache
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\KnobControlCode\obj\Release\KnobControl.exe

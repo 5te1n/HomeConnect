@@ -25,3 +25,7 @@ D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Release\HomeConne
 D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Release\HouseControl.Eingangstuer_Steuerung.resources
 C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Release\HouseControl.Eingangstuer_Steuerung.resources
 C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Release\HouseControl.HouseBuilderLoading.resources
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\bin\Release\KnobControl.exe
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Release\HouseControl.Heizungs_Steuerung.resources
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Release\HouseControl.HouseBuilderLoading.resources
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Release\HouseControl.Waschmaschienen_Steuerung.resources

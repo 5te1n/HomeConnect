@@ -15,6 +15,7 @@ namespace HouseControl
         Herd_Steuerung m_HerdSteuerung;
         Eingangstuer_Steuerung m_Eingangstuer_Steuerung;
         Heizungs_Steuerung m_Heizungs_Steuerung;
+        Waschmaschienen_Steuerung m_Waschmaschine;
         
         public bool[] IS_LIGHT_ON = new bool[5] { false, false, false, false, false };
         
@@ -24,6 +25,7 @@ namespace HouseControl
             m_HerdSteuerung = new Herd_Steuerung();
             m_Eingangstuer_Steuerung = new Eingangstuer_Steuerung();
             m_Heizungs_Steuerung = new Heizungs_Steuerung();
+            m_Waschmaschine = new Waschmaschienen_Steuerung();
 
             m_Bells.Parent = m_Eingangstuer;
             m_Bells.Location = new Point(7, 10);
@@ -66,6 +68,12 @@ namespace HouseControl
             pictureBoxVerdunkeln.Hide();
         }
 
+        public void close_Waschmaschine()
+        {
+            m_Waschmaschine.Hide();
+            pictureBoxVerdunkeln.Hide();
+        }
+
         private void m_Eingangstuer_Click(object sender, EventArgs e)
         {
             pictureBoxVerdunkeln.BringToFront();
@@ -90,6 +98,12 @@ namespace HouseControl
         {
             pictureBoxVerdunkeln.Show();
             m_Heizungs_Steuerung.ShowDialog(this);
+        }
+
+        private void m_Washer_Click(object sender, EventArgs e)
+        {
+            pictureBoxVerdunkeln.Show();
+            m_Waschmaschine.ShowDialog(this);
         }
     }
 }

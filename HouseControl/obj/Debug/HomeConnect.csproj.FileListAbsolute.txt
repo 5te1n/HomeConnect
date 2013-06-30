@@ -31,3 +31,5 @@ C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Debug\HomeConnect.csprojResolv
 C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Debug\HouseControl.Eingangstuer_Steuerung.resources
 C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Debug\HouseControl.Heizungs_Steuerung.resources
 C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Debug\HouseControl.HouseBuilderLoading.resources
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Debug\HouseControl.HouseBuilderLoading.resources
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Debug\HouseControl.Waschmaschienen_Steuerung.resources

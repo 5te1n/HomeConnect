@@ -15,3 +15,4 @@ D:\Andrei\Uni\Interaktive Systeme\HomeConnect\KnobControlCode\obj\Debug\VolumeCo
 D:\Andrei\Uni\Interaktive Systeme\HomeConnect\KnobControlCode\obj\Debug\KnobControl.csproj.GenerateResource.Cache
 D:\Andrei\Uni\Interaktive Systeme\HomeConnect\KnobControlCode\obj\Debug\KnobControl.exe
 D:\Andrei\Uni\Interaktive Systeme\HomeConnect\KnobControlCode\obj\Debug\KnobControl.pdb
+D:\Andrei\Uni\Interaktive Systeme\HomeConnect\KnobControlCode\obj\Debug\KnobControl.csprojResolveAssemblyReference.cache

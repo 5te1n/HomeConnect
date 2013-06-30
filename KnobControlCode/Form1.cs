@@ -174,6 +174,7 @@ namespace knobControl
             // Form1
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(700, 370);
             this.Controls.Add(this.knobControl1);
             this.Controls.Add(this.label4);

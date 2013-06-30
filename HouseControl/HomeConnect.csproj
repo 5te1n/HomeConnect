@@ -96,6 +96,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Room.cs" />
+    <Compile Include="Waschmaschienen_Steuerung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Waschmaschienen_Steuerung.Designer.cs">
+      <DependentUpon>Waschmaschienen_Steuerung.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Eingangstuer_Steuerung.resx">
       <DependentUpon>Eingangstuer_Steuerung.cs</DependentUpon>
     </EmbeddedResource>
@@ -121,6 +127,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Waschmaschienen_Steuerung.resx">
+      <DependentUpon>Waschmaschienen_Steuerung.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -178,6 +187,8 @@
     <Content Include="Resources\TVbig.png" />
     <Content Include="Resources\TVerror.png" />
     <Content Include="Resources\Verdunkelndes Grau halb transparent.png" />
+    <Content Include="Resources\Waschmaschine Bedienung.jpg" />
+    <Content Include="Resources\washing-machine-icon.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\KnobControlCode\KnobControl.csproj">
