@@ -28,11 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label7 = new System.Windows.Forms.Label();
             this.m_panel = new System.Windows.Forms.Panel();
             this.m_Waschmaschinen_Regler = new KnobControl.KnobControl();
             this.m_Waschmaschine_Picture = new System.Windows.Forms.PictureBox();
             this.button_OK = new System.Windows.Forms.Button();
+            this.m_Progress = new System.Windows.Forms.ProgressBar();
+            this.m_Start_Button = new System.Windows.Forms.Button();
+            this.m_Timer = new System.Windows.Forms.Timer(this.components);
+            this.m_Zeit_Label = new System.Windows.Forms.Label();
             this.m_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_Waschmaschine_Picture)).BeginInit();
             this.SuspendLayout();
@@ -76,6 +81,7 @@
             this.m_Waschmaschinen_Regler.TabIndex = 8;
             this.m_Waschmaschinen_Regler.TabStop = false;
             this.m_Waschmaschinen_Regler.Value = 0;
+            this.m_Waschmaschinen_Regler.ValueChanged += new KnobControl.ValueChangedEventHandler(this.m_Waschmaschinen_Regler_ValueChanged);
             // 
             // m_Waschmaschine_Picture
             // 
@@ -98,11 +104,50 @@
             this.button_OK.UseVisualStyleBackColor = true;
             this.button_OK.Click += new System.EventHandler(this.button_OK_Click);
             // 
+            // m_Progress
+            // 
+            this.m_Progress.Location = new System.Drawing.Point(68, 241);
+            this.m_Progress.Maximum = 5400;
+            this.m_Progress.Name = "m_Progress";
+            this.m_Progress.Size = new System.Drawing.Size(166, 23);
+            this.m_Progress.Step = 1;
+            this.m_Progress.TabIndex = 19;
+            // 
+            // m_Start_Button
+            // 
+            this.m_Start_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_Start_Button.Location = new System.Drawing.Point(68, 313);
+            this.m_Start_Button.Name = "m_Start_Button";
+            this.m_Start_Button.Size = new System.Drawing.Size(166, 64);
+            this.m_Start_Button.TabIndex = 20;
+            this.m_Start_Button.Text = "Start";
+            this.m_Start_Button.UseVisualStyleBackColor = true;
+            this.m_Start_Button.Click += new System.EventHandler(this.m_Start_Button_Click);
+            // 
+            // m_Timer
+            // 
+            this.m_Timer.Interval = 1;
+            this.m_Timer.Tick += new System.EventHandler(this.m_Timer_Tick);
+            // 
+            // m_Zeit_Label
+            // 
+            this.m_Zeit_Label.AutoSize = true;
+            this.m_Zeit_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_Zeit_Label.ForeColor = System.Drawing.Color.MediumBlue;
+            this.m_Zeit_Label.Location = new System.Drawing.Point(85, 267);
+            this.m_Zeit_Label.Name = "m_Zeit_Label";
+            this.m_Zeit_Label.Size = new System.Drawing.Size(128, 31);
+            this.m_Zeit_Label.TabIndex = 21;
+            this.m_Zeit_Label.Text = "02:30:00";
+            // 
             // Waschmaschienen_Steuerung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 500);
+            this.Controls.Add(this.m_Zeit_Label);
+            this.Controls.Add(this.m_Start_Button);
+            this.Controls.Add(this.m_Progress);
             this.Controls.Add(this.m_panel);
             this.Controls.Add(this.m_Waschmaschine_Picture);
             this.Controls.Add(this.label7);
@@ -126,5 +171,9 @@
         private System.Windows.Forms.PictureBox m_Waschmaschine_Picture;
         private System.Windows.Forms.Panel m_panel;
         private KnobControl.KnobControl m_Waschmaschinen_Regler;
+        private System.Windows.Forms.ProgressBar m_Progress;
+        private System.Windows.Forms.Button m_Start_Button;
+        private System.Windows.Forms.Timer m_Timer;
+        private System.Windows.Forms.Label m_Zeit_Label;
     }
 }
