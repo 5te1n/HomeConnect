@@ -59,7 +59,7 @@
             // 
             // m_Heizung_Picture
             // 
-            this.m_Heizung_Picture.Image = global::HouseControl.Properties.Resources.icon_heizung;
+            this.m_Heizung_Picture.Image = global::HouseControl.Properties.Resources.Heizung_Aus;
             this.m_Heizung_Picture.Location = new System.Drawing.Point(109, 114);
             this.m_Heizung_Picture.Name = "m_Heizung_Picture";
             this.m_Heizung_Picture.Size = new System.Drawing.Size(185, 172);

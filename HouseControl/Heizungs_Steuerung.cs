@@ -24,12 +24,14 @@ namespace HouseControl
 
         private void button_OK_Click(object sender, EventArgs e)
         {
-            ((HouseControllLayer)Owner).close_Heizung();
+            ((HouseControllLayer)Owner).close_Heizung(m_Heizungs_Regler.Value > 0);
         }
 
         private void m_Heizungs_Regler_ValueChanged(object Sender)
         {
-            m_Heizungstimer.Enabled = true;
+            //m_Heizungstimer.Enabled = true;
+            if (m_Heizungs_Regler.Value > 0) m_Heizung_Picture.Image = Properties.Resources.icon_heizung;
+            else m_Heizung_Picture.Image = Properties.Resources.Heizung_Aus;
         }
 
         private void m_Heizungstimer_Tick(object sender, EventArgs e)

@@ -37,8 +37,7 @@ namespace HouseControl
             m_Feuer.Location = new Point(18,18);
             m_Feuer.Hide();
 
-            m_Temperatur.Parent = m_Heizung;
-            m_Temperatur.Location = new Point(5,50);
+            
             
         }
 
@@ -79,10 +78,13 @@ namespace HouseControl
             pictureBoxVerdunkeln.Hide();
         }
 
-        public void close_Heizung()
+        public void close_Heizung(bool IS_On)
         {       
             m_Heizungs_Steuerung.Hide();
             pictureBoxVerdunkeln.Hide();
+
+            if (IS_On) m_Heizung.Image = Properties.Resources.icon_heizung;
+            else m_Heizung.Image = Properties.Resources.Heizung_Aus;
         }
 
         public void close_Waschmaschine()

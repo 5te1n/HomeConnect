@@ -32,6 +32,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HouseControllLayer));
+            this.m_Blink_Timer_Show = new System.Windows.Forms.Timer(this.components);
+            this.m_Blink_Timer_Hide = new System.Windows.Forms.Timer(this.components);
+            this.m_Temperatur = new System.Windows.Forms.Label();
             this.m_Feuer = new System.Windows.Forms.PictureBox();
             this.m_Washer = new System.Windows.Forms.PictureBox();
             this.m_Heizung = new System.Windows.Forms.PictureBox();
@@ -41,9 +44,6 @@
             this.Herd = new System.Windows.Forms.PictureBox();
             this.Light1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxVerdunkeln = new System.Windows.Forms.PictureBox();
-            this.m_Blink_Timer_Show = new System.Windows.Forms.Timer(this.components);
-            this.m_Blink_Timer_Hide = new System.Windows.Forms.Timer(this.components);
-            this.m_Temperatur = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.m_Feuer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Washer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Heizung)).BeginInit();
@@ -53,6 +53,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.Light1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVerdunkeln)).BeginInit();
             this.SuspendLayout();
+            // 
+            // m_Blink_Timer_Show
+            // 
+            this.m_Blink_Timer_Show.Enabled = true;
+            this.m_Blink_Timer_Show.Interval = 500;
+            this.m_Blink_Timer_Show.Tick += new System.EventHandler(this.m_Blink_Timer_Show_Tick);
+            // 
+            // m_Blink_Timer_Hide
+            // 
+            this.m_Blink_Timer_Hide.Enabled = true;
+            this.m_Blink_Timer_Hide.Interval = 750;
+            this.m_Blink_Timer_Hide.Tick += new System.EventHandler(this.m_Blink_Timer_Hide_Tick);
+            // 
+            // m_Temperatur
+            // 
+            resources.ApplyResources(this.m_Temperatur, "m_Temperatur");
+            this.m_Temperatur.BackColor = System.Drawing.Color.Silver;
+            this.m_Temperatur.ForeColor = System.Drawing.Color.Maroon;
+            this.m_Temperatur.Name = "m_Temperatur";
             // 
             // m_Feuer
             // 
@@ -73,7 +92,7 @@
             // 
             // m_Heizung
             // 
-            this.m_Heizung.Image = global::HouseControl.Properties.Resources.icon_heizung;
+            this.m_Heizung.Image = global::HouseControl.Properties.Resources.Heizung_Aus;
             resources.ApplyResources(this.m_Heizung, "m_Heizung");
             this.m_Heizung.Name = "m_Heizung";
             this.m_Heizung.TabStop = false;
@@ -126,25 +145,6 @@
             resources.ApplyResources(this.pictureBoxVerdunkeln, "pictureBoxVerdunkeln");
             this.pictureBoxVerdunkeln.Name = "pictureBoxVerdunkeln";
             this.pictureBoxVerdunkeln.TabStop = false;
-            // 
-            // m_Blink_Timer_Show
-            // 
-            this.m_Blink_Timer_Show.Enabled = true;
-            this.m_Blink_Timer_Show.Interval = 500;
-            this.m_Blink_Timer_Show.Tick += new System.EventHandler(this.m_Blink_Timer_Show_Tick);
-            // 
-            // m_Blink_Timer_Hide
-            // 
-            this.m_Blink_Timer_Hide.Enabled = true;
-            this.m_Blink_Timer_Hide.Interval = 750;
-            this.m_Blink_Timer_Hide.Tick += new System.EventHandler(this.m_Blink_Timer_Hide_Tick);
-            // 
-            // m_Temperatur
-            // 
-            resources.ApplyResources(this.m_Temperatur, "m_Temperatur");
-            this.m_Temperatur.BackColor = System.Drawing.Color.Transparent;
-            this.m_Temperatur.ForeColor = System.Drawing.Color.Maroon;
-            this.m_Temperatur.Name = "m_Temperatur";
             // 
             // HouseControllLayer
             // 
