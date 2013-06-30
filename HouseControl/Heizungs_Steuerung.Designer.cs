@@ -40,10 +40,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.m_Heizungstimer = new System.Windows.Forms.Timer(this.components);
             this.m_Aus_Button = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.m_Heizung_Picture)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button_OK
@@ -70,10 +72,10 @@
             // m_Temperatur_Label
             // 
             this.m_Temperatur_Label.AutoSize = true;
-            this.m_Temperatur_Label.Font = new System.Drawing.Font("Helvetica-Narrow", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_Temperatur_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_Temperatur_Label.Location = new System.Drawing.Point(151, 303);
             this.m_Temperatur_Label.Name = "m_Temperatur_Label";
-            this.m_Temperatur_Label.Size = new System.Drawing.Size(104, 49);
+            this.m_Temperatur_Label.Size = new System.Drawing.Size(125, 46);
             this.m_Temperatur_Label.TabIndex = 3;
             this.m_Temperatur_Label.Text = "18 °C";
             // 
@@ -167,17 +169,6 @@
             this.label6.TabIndex = 14;
             this.label6.Text = "6";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Helvetica-Narrow", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(362, 9);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(82, 28);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Heizung";
-            // 
             // m_Heizungstimer
             // 
             this.m_Heizungstimer.Enabled = true;
@@ -198,13 +189,33 @@
             this.m_Aus_Button.UseVisualStyleBackColor = true;
             this.m_Aus_Button.Click += new System.EventHandler(this.m_Aus_Button_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Location = new System.Drawing.Point(-1, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(803, 53);
+            this.panel1.TabIndex = 17;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(351, 10);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(99, 26);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Heizung";
+            // 
             // Heizungs_Steuerung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 500);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.m_Aus_Button);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -221,6 +232,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Heizungs_Steuerung";
             ((System.ComponentModel.ISupportInitialize)(this.m_Heizung_Picture)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,8 +252,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Timer m_Heizungstimer;
         private System.Windows.Forms.Button m_Aus_Button;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label7;
     }
 }

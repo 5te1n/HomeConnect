@@ -55,7 +55,6 @@
             this.m_radioButton41 = new System.Windows.Forms.RadioButton();
             this.m_Blink_Timer_Show = new System.Windows.Forms.Timer(this.components);
             this.m_Blink_Timer_Hide = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
             this.m_Aus_Button = new System.Windows.Forms.Button();
             this.m_Feuer4 = new System.Windows.Forms.PictureBox();
             this.m_Feuer3 = new System.Windows.Forms.PictureBox();
@@ -63,6 +62,8 @@
             this.m_Feuer1 = new System.Windows.Forms.PictureBox();
             this.m_Herd = new System.Windows.Forms.PictureBox();
             this.button_OK = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.m_panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_Regler1)).BeginInit();
             this.m_panel2.SuspendLayout();
@@ -76,6 +77,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.m_Feuer2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Feuer1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Herd)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // m_radioButton10
@@ -366,17 +368,6 @@
             this.m_Blink_Timer_Hide.Interval = 750;
             this.m_Blink_Timer_Hide.Tick += new System.EventHandler(this.m_Blink_Timer_Hide_Tick);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Helvetica-Narrow", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(365, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 28);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Herd";
-            // 
             // m_Aus_Button
             // 
             this.m_Aus_Button.BackgroundImage = global::HouseControl.Properties.Resources.Turn_Off_icon;
@@ -457,14 +448,34 @@
             this.button_OK.UseVisualStyleBackColor = true;
             this.button_OK.Click += new System.EventHandler(this.button_OK_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(0, -3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(803, 40);
+            this.panel1.TabIndex = 17;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(351, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 26);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Herd";
+            // 
             // Herd_Steuerung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 500);
             this.ControlBox = false;
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.m_Aus_Button);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.m_Feuer4);
             this.Controls.Add(this.m_Feuer3);
             this.Controls.Add(this.m_Feuer2);
@@ -496,8 +507,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.m_Feuer2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Feuer1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Herd)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -535,7 +547,8 @@
         private System.Windows.Forms.PictureBox m_Feuer2;
         private System.Windows.Forms.PictureBox m_Feuer3;
         private System.Windows.Forms.PictureBox m_Feuer4;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button m_Aus_Button;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
     }
 }

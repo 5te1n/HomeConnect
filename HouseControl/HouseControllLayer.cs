@@ -117,7 +117,13 @@ namespace HouseControl
             if (mode == 4)
             {
                 m_Progress_Circel.Hide();
-                m_Waschmaschine.ShowDialog(this);
+
+                if (!m_Waschmaschine.Visible)
+                {
+                    pictureBoxVerdunkeln.BringToFront();
+                    pictureBoxVerdunkeln.Show();
+                    m_Waschmaschine.ShowDialog(this); 
+                }
             }
         }
 
@@ -153,12 +159,14 @@ namespace HouseControl
 
         private void m_Heizung_Click(object sender, EventArgs e)
         {
+            pictureBoxVerdunkeln.BringToFront();
             pictureBoxVerdunkeln.Show();
             m_Heizungs_Steuerung.ShowDialog(this);
         }
 
         private void m_Washer_Click(object sender, EventArgs e)
         {
+            pictureBoxVerdunkeln.BringToFront();
             pictureBoxVerdunkeln.Show();
             m_Waschmaschine.ShowDialog(this);
         }
@@ -198,6 +206,27 @@ namespace HouseControl
             if (!IS_LIGHT_ON[2]) Light3.Image = Properties.Resources.Gluehbirne_ON;
 
             IS_LIGHT_ON[2] = !IS_LIGHT_ON[2];
+        }
+
+        
+
+        private void m_Alles_Aus_Button_Click_1(object sender, EventArgs e)
+        {
+            m_Waschmaschine.Ausschalten();
+            m_HerdSteuerung.Ausschalten();
+            IS_HERD_ON = false;
+            m_Feuer.Hide();
+            m_Heizungs_Steuerung.Ausschalten();
+            m_Heizung.Image = Properties.Resources.Heizung_Aus;
+
+            IS_LIGHT_ON[0] = false;
+            Light1.Image = Properties.Resources.Gluehbirne_OFF;
+            IS_LIGHT_ON[1] = false;
+            Light2.Image = Properties.Resources.Gluehbirne_OFF;
+            IS_LIGHT_ON[2] = false;
+            Light3.Image = Properties.Resources.Gluehbirne_OFF;
+            IS_LIGHT_ON[3] = false;
+            Light4.Image = Properties.Resources.Gluehbirne_OFF;
         }
     }
 }

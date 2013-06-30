@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Waschmaschienen_Steuerung));
-            this.label7 = new System.Windows.Forms.Label();
             this.m_Progress = new System.Windows.Forms.ProgressBar();
             this.m_Start_Button = new System.Windows.Forms.Button();
             this.m_Timer = new System.Windows.Forms.Timer(this.components);
@@ -41,21 +40,13 @@
             this.button_OK = new System.Windows.Forms.Button();
             this.m_Progress_Circel = new System.Windows.Forms.PictureBox();
             this.m_Aus_Button = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.m_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_Waschmaschine_Picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Progress_Circel)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Helvetica-Narrow", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(333, 9);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(153, 28);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Waschmaschine";
             // 
             // m_Progress
             // 
@@ -68,7 +59,7 @@
             // 
             // m_Start_Button
             // 
-            this.m_Start_Button.Font = new System.Drawing.Font("Helvetica-Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_Start_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_Start_Button.Location = new System.Drawing.Point(68, 313);
             this.m_Start_Button.Name = "m_Start_Button";
             this.m_Start_Button.Size = new System.Drawing.Size(166, 64);
@@ -168,11 +159,32 @@
             this.m_Aus_Button.UseVisualStyleBackColor = true;
             this.m_Aus_Button.Click += new System.EventHandler(this.m_Aus_Button_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(0, -1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(803, 53);
+            this.panel1.TabIndex = 24;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(351, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(186, 26);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Waschmaschine";
+            // 
             // Waschmaschienen_Steuerung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 500);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.m_Aus_Button);
             this.Controls.Add(this.m_Progress_Circel);
             this.Controls.Add(this.m_Zeit_Label);
@@ -180,7 +192,6 @@
             this.Controls.Add(this.m_Progress);
             this.Controls.Add(this.m_panel);
             this.Controls.Add(this.m_Waschmaschine_Picture);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.button_OK);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -190,6 +201,8 @@
             this.m_panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_Waschmaschine_Picture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Progress_Circel)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,7 +211,6 @@
         #endregion
 
         private System.Windows.Forms.Button button_OK;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox m_Waschmaschine_Picture;
         private System.Windows.Forms.Panel m_panel;
         private KnobControl.KnobControl m_Waschmaschinen_Regler;
@@ -208,5 +220,7 @@
         private System.Windows.Forms.Label m_Zeit_Label;
         private System.Windows.Forms.PictureBox m_Progress_Circel;
         private System.Windows.Forms.Button m_Aus_Button;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
     }
 }

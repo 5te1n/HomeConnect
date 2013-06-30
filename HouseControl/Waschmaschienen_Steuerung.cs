@@ -102,6 +102,11 @@ namespace HouseControl
 
         private void m_Aus_Button_Click(object sender, EventArgs e)
         {
+            Ausschalten();
+        }
+
+        public void Ausschalten()
+        {
             IS_ON = false;
             m_Waschmaschinen_Regler.Value = 8;
             m_Timer.Enabled = false;

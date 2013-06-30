@@ -57,5 +57,10 @@ namespace HouseControl
         {
             m_Heizungs_Regler.Value = 0;
         }
+
+        public void Ausschalten()
+        {
+            m_Heizungs_Regler.Value = 0;
+        }
     }
 }

@@ -83,6 +83,7 @@
             resources.ApplyResources(this.m_Alles_Aus_Button, "m_Alles_Aus_Button");
             this.m_Alles_Aus_Button.Name = "m_Alles_Aus_Button";
             this.m_Alles_Aus_Button.UseVisualStyleBackColor = true;
+            this.m_Alles_Aus_Button.Click += new System.EventHandler(this.m_Alles_Aus_Button_Click_1);
             // 
             // m_Panel
             // 

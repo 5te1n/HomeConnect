@@ -228,6 +228,11 @@ namespace HouseControl
 
         private void m_Aus_Button_Click(object sender, EventArgs e)
         {
+            Ausschalten();
+        }
+
+        public void Ausschalten()
+        {
             m_radioButton10.Checked = true;
             m_radioButton20.Checked = true;
             m_radioButton30.Checked = true;

@@ -156,6 +156,171 @@
   <data name="m_Panel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
+  <data name="&gt;&gt;Light3.Name" xml:space="preserve">
+    <value>Light3</value>
+  </data>
+  <data name="&gt;&gt;Light3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Light3.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="&gt;&gt;Light3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Light4.Name" xml:space="preserve">
+    <value>Light4</value>
+  </data>
+  <data name="&gt;&gt;Light4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Light4.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="&gt;&gt;Light4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Light2.Name" xml:space="preserve">
+    <value>Light2</value>
+  </data>
+  <data name="&gt;&gt;Light2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Light2.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="&gt;&gt;Light2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Herd.Name" xml:space="preserve">
+    <value>Herd</value>
+  </data>
+  <data name="&gt;&gt;Herd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Herd.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="&gt;&gt;Herd.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;m_Temperatur.Name" xml:space="preserve">
+    <value>m_Temperatur</value>
+  </data>
+  <data name="&gt;&gt;m_Temperatur.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_Temperatur.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="&gt;&gt;m_Temperatur.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;m_Bells.Name" xml:space="preserve">
+    <value>m_Bells</value>
+  </data>
+  <data name="&gt;&gt;m_Bells.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_Bells.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="&gt;&gt;m_Bells.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;m_Progress_Circel.Name" xml:space="preserve">
+    <value>m_Progress_Circel</value>
+  </data>
+  <data name="&gt;&gt;m_Progress_Circel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_Progress_Circel.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="&gt;&gt;m_Progress_Circel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;m_Eingangstuer.Name" xml:space="preserve">
+    <value>m_Eingangstuer</value>
+  </data>
+  <data name="&gt;&gt;m_Eingangstuer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_Eingangstuer.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="&gt;&gt;m_Eingangstuer.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;m_Heizung.Name" xml:space="preserve">
+    <value>m_Heizung</value>
+  </data>
+  <data name="&gt;&gt;m_Heizung.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_Heizung.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="&gt;&gt;m_Heizung.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;Light1.Name" xml:space="preserve">
+    <value>Light1</value>
+  </data>
+  <data name="&gt;&gt;Light1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Light1.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="&gt;&gt;Light1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;m_Feuer.Name" xml:space="preserve">
+    <value>m_Feuer</value>
+  </data>
+  <data name="&gt;&gt;m_Feuer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_Feuer.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="&gt;&gt;m_Feuer.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;m_Washer.Name" xml:space="preserve">
+    <value>m_Washer</value>
+  </data>
+  <data name="&gt;&gt;m_Washer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_Washer.Parent" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="&gt;&gt;m_Washer.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="m_Panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 140</value>
+  </data>
+  <data name="m_Panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1342, 591</value>
+  </data>
+  <data name="m_Panel.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;m_Panel.Name" xml:space="preserve">
+    <value>m_Panel</value>
+  </data>
+  <data name="&gt;&gt;m_Panel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_Panel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_Panel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="Light3.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
@@ -1415,63 +1580,41 @@
   <data name="&gt;&gt;m_Washer.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="m_Panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 140</value>
-  </data>
-  <data name="m_Panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1342, 591</value>
-  </data>
-  <data name="m_Panel.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;m_Panel.Name" xml:space="preserve">
-    <value>m_Panel</value>
-  </data>
-  <data name="&gt;&gt;m_Panel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m_Panel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;m_Panel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
-        AABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAB0JJREFUWEet
+        lw9UVFUex9+beQwMw/wBhoEZhj8zKCL/EeioJ/Mg/lmL1KLdZekvyiqamp411k322CKljZsgLhXlihID
+        mBoGCkJU4J8IXUNAk9qjaCIUC/5ZxW1X4Lv3vhneMA1hVt9zPoc5w53f5/fuee/e+5j7iC9hKaGE0May
+        zA0nCTNMIZ9vku/aCWZCBkFP+MUyk3DI2Y29GzFPgt9mS7HxkBTvfiVB/U0RPr7FovSCE7JrXJCaI0XU
+        fAmc5exd8ptqQgIt8FPjT6iUeXPD055XYVmlFzYc98TWViV2dbri/X85o+4Wh7rbHA70OqPokity2xXY
+        2OSBlYfVeHC1Em5abpjUqCIE0IL3kwUsx1wzLHJHUpEfnqnQIueUCiVXpKi8LkHlDQkO9DujvJfMRI8r
+        dnW5ofCyHDsuKLDlrDv+eFyNtA+0WFSsx4RkFViOvU5qLrSUvnd+z8nFgyFr9UgoNCDrhAeqrjuh/o4Y
+        NbecflD+t4sK5P5TBVOHO14554Gsz9VYXKPFnJ2BCF+nB6cQD5La9P4YN6liBTdkWGfEr4oCUN7tgsb/
+        iu5b/nKbJza0qJH5Dw2WNWgx820jJq43gFNyQ8TxpEXlmEhWIrqjyQjCY2Y/fDQgdpDv63PBniuuKLzg
+        hoIvyZSfpyiQT8g9r4TpnAp/afcQ5GubvbHyUx+kN+gwvTAIuueNoA7iirIobRETPpc9osd8cuWN34ns
+        5BXkqv/eKUP+FwpsPzc+eYRXW92x7pSGly87qsPiBl889aEforYHQ/GoL6jL6hSSLvJzQ4QpGPW37a/c
+        3C1FHhFvO6u0o/ziHBz9JgtlFxId/kf5a7sSmc1evPzpj/RIqfPHokOB8N8UCrG/jDaRblEzjIjwpTQl
+        CEXk8RotL/pahq3tKgfqrq7B8PAgaIbI3/2dyWOOo7z4mYaXJ9cEYAFpYGbpBLj+Log20GF1Mw8xahc8
+        XupnJ999RYYtbe4O1F19kciHePlIzvQXjzmWspmw4piWl8//wIjZ7wfBYAoFS5zE/SBtwMRN9eHv+BH5
+        3l4X5LR6YNMZe2q71jvIaWq7Mh3Gjiab8ASZASqfuW8i4osnQTzVmzawhTZwLC7TR5DTu33reRU2tnja
+        caQri8iHrUpbWvvMyG7xchj/fdY0eRP5BEwvD0a8eRJUzxloA420gW9XVHgKcvp8v3RajT9ZoZ9rul4e
+        U97Sa8afT2uEsfdiXoWRl0cXT4bvxhDaQDe5DdihvHa5sMi8/pWKf4RGqO7KGVPe3LMb60/62I29F7+p
+        9eflYUWhCMgNBcMy/yNPI8uv8SMr3IYzXljd7MNz+MrmMeX0u28GOtA98MW4fH37DN7rzBTqPdug5+XB
+        O8NgLAiDSMyAETsxKCM34MjyuuqkFsuadDC1LxhTfr+hNUxnF/I1047qebmhMAL6HRF0kwIj4pi7ey67
+        CGt7+glfpB3T4+2OF6wlfn5oLVrz6UY/i/yNSGhyI8nVs3RvYHryW6TCxpJ2XI/URn9kHI3GtTs91hI/
+        Pf2kBq1FaybXB/Jy7x3RcN8UTm/Cb2kDjevKXYRdbcmnejz+sYFnVX0C+gYcm6DTWtWxE2+dfGlc8pvW
+        4rmaaKFeYtVEXu6ZFwPZiom0gWO0gdeS1kiELXXlKR0erg+y8GEQllQnoPd2t1VtS99/erD0xGx+zLiM
+        1CJElYbycsXrU+A0V0cbMNEGZuhCRNhGHj+6n2e1eiGxNhizRjgSjNTKRHT/u8uqtqX/u14sPvGwbew4
+        JJA62oJoXi41xYLVSmkDM2gD/Ga03CwXDhOPfWLAtOrJNg5PxsL9s3D1hmMTfaSJXzfMtR8/BmHl4VZ5
+        HLgMfhESNiOadOMDnHCSeYEsMPGHQhFTFSYQXRmGuWVzcOnaZavaltKLJXZjv0/kwXB4bLfKN8eDMcpp
+        A0ssaks4QsuCTXLhJJPS4I+Qg5GYNJqKSEzbPRudffZNFJ7bZT9uNOQ3Xm/G2ORPGKn8NMHuQEITLZGx
+        d54p8xROMkm1RgQeiIH/fnui35mH5ktt5CwwjKaLLQgvnuUwhmdfDDzftF05uzoCjLN4gLgiLErHPOXm
+        LRpK3asRTjKPVBsRQAqp98bZIc+Lhfur0yHfHuvwP56SOCjzY23yP0SBUUroyTjFovrhLHdViwbnF9hO
+        Mo9WGRCzPxReZXGQmaeOi7z4AajeioVi26grzyAbj9yJvi0Jx7B7ZZHIibkenqZC0kHbSYYeJmLKJiOw
+        JAqa4lio9sRDsTseyl3xcH+HzMQbMfCwPue8PCcOzBw9XXL7Sc0kS+kfn0BCtavOaThslQYzzEHCYWJk
+        SxU2FuvyOrLISF+ZAnFyIBhPZ/pqdpDws15WEwlHOJloUD1DAf+lWgRlGzEhn8xEQTh8ya6mMYVDmRkC
+        aUoAuCkeYKRiOt30nfAhWuCXih9hOaGMcJZwk+HYYTK99CpvENoI9NWdvsLrCD8iDPN/5o+hF146kjQA
+        AAAASUVORK5CYII=
 </value>
   </data>
   <data name="button1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
@@ -1505,10 +1648,13 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBoxVerdunkeln.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 146</value>
+    <value>0, 1</value>
   </data>
   <data name="pictureBoxVerdunkeln.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1325, 588</value>
+    <value>1366, 748</value>
+  </data>
+  <data name="pictureBoxVerdunkeln.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="pictureBoxVerdunkeln.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
