@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.washingButton = new System.Windows.Forms.Button();
             this.fridgeButton = new System.Windows.Forms.Button();
             this.moveButton = new System.Windows.Forms.Button();
             this.scaleButton = new System.Windows.Forms.Button();
@@ -71,9 +72,20 @@
             // 
             this.groupBox2.Location = new System.Drawing.Point(7, 277);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(50, 431);
+            this.groupBox2.Size = new System.Drawing.Size(50, 479);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
+            // 
+            // washingButton
+            // 
+            this.washingButton.BackColor = System.Drawing.SystemColors.Control;
+            this.washingButton.Image = ((System.Drawing.Image)(resources.GetObject("washingButton.Image")));
+            this.washingButton.Location = new System.Drawing.Point(12, 604);
+            this.washingButton.Name = "washingButton";
+            this.washingButton.Size = new System.Drawing.Size(40, 40);
+            this.washingButton.TabIndex = 18;
+            this.washingButton.UseVisualStyleBackColor = false;
+            this.washingButton.Click += new System.EventHandler(this.washingButton_Click);
             // 
             // fridgeButton
             // 
@@ -134,7 +146,7 @@
             // 
             this.tvButton.BackColor = System.Drawing.SystemColors.Control;
             this.tvButton.Image = global::HouseControl.Properties.Resources.TV;
-            this.tvButton.Location = new System.Drawing.Point(12, 656);
+            this.tvButton.Location = new System.Drawing.Point(12, 708);
             this.tvButton.Name = "tvButton";
             this.tvButton.Size = new System.Drawing.Size(40, 40);
             this.tvButton.TabIndex = 10;
@@ -145,7 +157,7 @@
             // 
             this.pcButton.BackColor = System.Drawing.SystemColors.Control;
             this.pcButton.Image = global::HouseControl.Properties.Resources.PC;
-            this.pcButton.Location = new System.Drawing.Point(12, 604);
+            this.pcButton.Location = new System.Drawing.Point(12, 656);
             this.pcButton.Name = "pcButton";
             this.pcButton.Size = new System.Drawing.Size(40, 40);
             this.pcButton.TabIndex = 9;
@@ -155,7 +167,7 @@
             // microWaveButton
             // 
             this.microWaveButton.BackColor = System.Drawing.SystemColors.Control;
-            this.microWaveButton.Image = global::HouseControl.Properties.Resources.Microwave;
+            this.microWaveButton.Image = ((System.Drawing.Image)(resources.GetObject("microWaveButton.Image")));
             this.microWaveButton.Location = new System.Drawing.Point(12, 500);
             this.microWaveButton.Name = "microWaveButton";
             this.microWaveButton.Size = new System.Drawing.Size(40, 40);
@@ -227,7 +239,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(64, 64);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1242, 642);
+            this.pictureBox1.Size = new System.Drawing.Size(1294, 694);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -242,6 +254,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1366, 768);
             this.ControlBox = false;
+            this.Controls.Add(this.washingButton);
             this.Controls.Add(this.fridgeButton);
             this.Controls.Add(this.moveButton);
             this.Controls.Add(this.scaleButton);
@@ -262,7 +275,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "HouseBuildingLayer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Grundriss Erstellung";
+            this.Text = "Grundrisserstellung";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -288,5 +301,6 @@
         private System.Windows.Forms.Button connectButton;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button washingButton;
     }
 }

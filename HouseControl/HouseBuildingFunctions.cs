@@ -16,7 +16,7 @@ namespace HouseControl
         LinkedList<Room> roomList;          // Contains all the rooms that currently exist. Used for XML exporting
         Room newRoom;                       // Temporary room used when the user is drawing room rectangles.
         
-        private enum DESIGN_STATE { ROOM, REMOVE_OBJECT, DOOR, MOVE, SCALE, CONNECT, LIGHT, HEATER, MICROWAVE, FRIDGE, PC, TV }
+        private enum DESIGN_STATE { ROOM, REMOVE_OBJECT, DOOR, MOVE, SCALE, CONNECT, LIGHT, HEATER, MICROWAVE, FRIDGE, PC, TV, WASHING }
         int current_state;
 
         HouseBuilderLoading loadingScreen = null;
@@ -36,7 +36,7 @@ namespace HouseControl
         {
             isDrawingRectangle = false;
             roomList = new LinkedList<Room>();
-            current_state = (int)DESIGN_STATE.MOVE;
+            current_state = (int)DESIGN_STATE.DOOR;
             newRoom = new Room();
         }
 
@@ -249,9 +249,9 @@ namespace HouseControl
 
                 case (int) DESIGN_STATE.MICROWAVE:
                     if (!_connectionError)
-                        newItem = new Interior(Properties.Resources.Microwavebig, _p, false);
+                        newItem = new Interior(Properties.Resources.herd128, _p, false);
                     else
-                        newItem = new Interior(Properties.Resources.Microwaveerror, Properties.Resources.Microwavebig, _p);
+                        newItem = new Interior(Properties.Resources.herd128error, Properties.Resources.herd128, _p);
                     break;
 
                 case (int) DESIGN_STATE.PC:
@@ -267,7 +267,12 @@ namespace HouseControl
                     else
                         newItem = new Interior(Properties.Resources.TVerror, Properties.Resources.TVbig, _p);
                     break;
-
+                case (int)DESIGN_STATE.WASHING:
+                    if (!_connectionError)
+                        newItem = new Interior(Properties.Resources.washing_machine_icon, _p, false);
+                    else
+                        newItem = new Interior(Properties.Resources.washingError, Properties.Resources.washing_machine_icon, _p);
+                    break;
                 default:
                     break;
 

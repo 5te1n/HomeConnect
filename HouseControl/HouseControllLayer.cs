@@ -130,7 +130,12 @@ namespace HouseControl
 
         private void HouseControllLayer_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.K) m_Bells.Show();
+            if (e.KeyCode == Keys.K)
+            {
+                System.Media.SoundPlayer doorBell = new System.Media.SoundPlayer(Properties.Resources.doorbell);
+                doorBell.Play();
+                m_Bells.Show();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

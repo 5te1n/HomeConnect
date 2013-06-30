@@ -253,4 +253,16 @@
   <data name="Progress_Circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\progress circle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="herd128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\herd128.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="herd128error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\herd128error.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="washingError" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\washingerror.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="doorbell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\doorbell.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

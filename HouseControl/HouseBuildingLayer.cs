@@ -12,7 +12,7 @@ namespace HouseControl
 {
     public partial class HouseBuildingLayer : Form
     {
-        private enum DESIGN_STATE {ROOM, REMOVE_OBJECT, DOOR, MOVE, SCALE, CONNECT, LIGHT, HEATER, MICROWAVE, FRIDGE, PC, TV  }
+        private enum DESIGN_STATE {ROOM, REMOVE_OBJECT, DOOR, MOVE, SCALE, CONNECT, LIGHT, HEATER, MICROWAVE, FRIDGE, PC, TV, WASHING  }
         HouseBuildingFunctions internalFunctions;
         HouseBuilderLoading loadingScreen = null;
 
@@ -20,7 +20,7 @@ namespace HouseControl
         {
             InitializeComponent();
             internalFunctions = new HouseBuildingFunctions();
-            moveButton.BackColor = Color.FromKnownColor(KnownColor.ActiveCaption);
+            doorButton.BackColor = Color.FromKnownColor(KnownColor.ActiveCaption);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -207,7 +207,14 @@ namespace HouseControl
             tvButton.BackColor = Color.FromKnownColor(KnownColor.ActiveCaption);
         }
 
-        #endregion
 
+        private void washingButton_Click(object sender, EventArgs e)
+        {
+            ClearButtonColor();
+            internalFunctions.SwitchState((int)DESIGN_STATE.WASHING);
+            washingButton.BackColor = Color.FromKnownColor(KnownColor.ActiveCaption);
+        }
+
+        #endregion
     }
 }

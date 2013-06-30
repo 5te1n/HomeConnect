@@ -37,7 +37,7 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Helvetica-Narrow", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::HouseControl.Properties.Resources.tuer_oeffnen;
             this.button1.Location = new System.Drawing.Point(509, 138);
             this.button1.Name = "button1";
@@ -61,9 +61,9 @@
             // 
             this.button_OK.BackgroundImage = global::HouseControl.Properties.Resources.OK_icon;
             this.button_OK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_OK.Location = new System.Drawing.Point(732, 429);
+            this.button_OK.Location = new System.Drawing.Point(672, 370);
             this.button_OK.Name = "button_OK";
-            this.button_OK.Size = new System.Drawing.Size(60, 60);
+            this.button_OK.Size = new System.Drawing.Size(120, 119);
             this.button_OK.TabIndex = 1;
             this.button_OK.UseVisualStyleBackColor = true;
             this.button_OK.Click += new System.EventHandler(this.button_OK_Click);
@@ -71,11 +71,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Helvetica-Narrow", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(367, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 25);
+            this.label1.Size = new System.Drawing.Size(117, 28);
             this.label1.TabIndex = 15;
             this.label1.Text = "Eingangstür";
             // 

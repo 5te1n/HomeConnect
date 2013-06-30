@@ -49,11 +49,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Helvetica-Narrow", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(333, 9);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(171, 25);
+            this.label7.Size = new System.Drawing.Size(153, 28);
             this.label7.TabIndex = 16;
             this.label7.Text = "Waschmaschine";
             // 
@@ -68,7 +68,7 @@
             // 
             // m_Start_Button
             // 
-            this.m_Start_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_Start_Button.Font = new System.Drawing.Font("Helvetica-Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_Start_Button.Location = new System.Drawing.Point(68, 313);
             this.m_Start_Button.Name = "m_Start_Button";
             this.m_Start_Button.Size = new System.Drawing.Size(166, 64);
@@ -136,9 +136,9 @@
             // 
             this.button_OK.BackgroundImage = global::HouseControl.Properties.Resources.OK_icon;
             this.button_OK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_OK.Location = new System.Drawing.Point(728, 428);
+            this.button_OK.Location = new System.Drawing.Point(703, 402);
             this.button_OK.Name = "button_OK";
-            this.button_OK.Size = new System.Drawing.Size(60, 60);
+            this.button_OK.Size = new System.Drawing.Size(85, 86);
             this.button_OK.TabIndex = 2;
             this.button_OK.UseVisualStyleBackColor = true;
             this.button_OK.Click += new System.EventHandler(this.button_OK_Click);

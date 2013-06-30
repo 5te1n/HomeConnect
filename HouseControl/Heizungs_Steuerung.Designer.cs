@@ -50,9 +50,9 @@
             // 
             this.button_OK.BackgroundImage = global::HouseControl.Properties.Resources.OK_icon;
             this.button_OK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_OK.Location = new System.Drawing.Point(728, 428);
+            this.button_OK.Location = new System.Drawing.Point(664, 360);
             this.button_OK.Name = "button_OK";
-            this.button_OK.Size = new System.Drawing.Size(60, 60);
+            this.button_OK.Size = new System.Drawing.Size(124, 128);
             this.button_OK.TabIndex = 1;
             this.button_OK.UseVisualStyleBackColor = true;
             this.button_OK.Click += new System.EventHandler(this.button_OK_Click);
@@ -70,10 +70,10 @@
             // m_Temperatur_Label
             // 
             this.m_Temperatur_Label.AutoSize = true;
-            this.m_Temperatur_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_Temperatur_Label.Font = new System.Drawing.Font("Helvetica-Narrow", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_Temperatur_Label.Location = new System.Drawing.Point(151, 303);
             this.m_Temperatur_Label.Name = "m_Temperatur_Label";
-            this.m_Temperatur_Label.Size = new System.Drawing.Size(125, 46);
+            this.m_Temperatur_Label.Size = new System.Drawing.Size(104, 49);
             this.m_Temperatur_Label.TabIndex = 3;
             this.m_Temperatur_Label.Text = "18 °C";
             // 
@@ -170,11 +170,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Helvetica-Narrow", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(362, 9);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 25);
+            this.label7.Size = new System.Drawing.Size(82, 28);
             this.label7.TabIndex = 15;
             this.label7.Text = "Heizung";
             // 

@@ -156,6 +156,7 @@
     <Content Include="Resources\connect.png" />
     <Content Include="Resources\Control Knob.png" />
     <Content Include="Resources\door.png" />
+    <Content Include="Resources\doorbell.wav" />
     <Content Include="Resources\door_down.png" />
     <Content Include="Resources\door_right.png" />
     <Content Include="Resources\Eingangstuer.png" />
@@ -167,6 +168,8 @@
     <Content Include="Resources\Gluehbirne_ON.gif" />
     <Content Include="Resources\heizungerror.png" />
     <Content Include="Resources\Heizung_Aus.jpg" />
+    <Content Include="Resources\herd128.jpg" />
+    <Content Include="Resources\herd128error.jpg" />
     <Content Include="Resources\Herd_Aus.jpg" />
     <Content Include="Resources\icon-heizung.gif" />
     <Content Include="Resources\icon-heizungsmall.png" />
@@ -193,6 +196,7 @@
     <Content Include="Resources\Verdunkelndes Grau halb transparent.png" />
     <Content Include="Resources\Waschmaschine Bedienung.jpg" />
     <Content Include="Resources\washing-machine-icon.png" />
+    <Content Include="Resources\washingError.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\KnobControlCode\KnobControl.csproj">

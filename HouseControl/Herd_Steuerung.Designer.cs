@@ -369,11 +369,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Helvetica-Narrow", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(365, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 25);
+            this.label1.Size = new System.Drawing.Size(53, 28);
             this.label1.TabIndex = 14;
             this.label1.Text = "Herd";
             // 
@@ -450,9 +450,9 @@
             // 
             this.button_OK.BackgroundImage = global::HouseControl.Properties.Resources.OK_icon;
             this.button_OK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_OK.Location = new System.Drawing.Point(732, 429);
+            this.button_OK.Location = new System.Drawing.Point(678, 379);
             this.button_OK.Name = "button_OK";
-            this.button_OK.Size = new System.Drawing.Size(60, 60);
+            this.button_OK.Size = new System.Drawing.Size(114, 110);
             this.button_OK.TabIndex = 0;
             this.button_OK.UseVisualStyleBackColor = true;
             this.button_OK.Click += new System.EventHandler(this.button_OK_Click);
