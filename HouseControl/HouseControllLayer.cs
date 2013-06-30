@@ -44,7 +44,7 @@ namespace HouseControl
             pictureBoxVerdunkeln.BringToFront();
             pictureBoxVerdunkeln.Show();
 
-            m_HerdSteuerung.Show(this);
+            m_HerdSteuerung.ShowDialog(this);
         }
 
         public void close_Herd()
@@ -71,7 +71,7 @@ namespace HouseControl
             pictureBoxVerdunkeln.BringToFront();
             pictureBoxVerdunkeln.Show();
 
-            m_Eingangstuer_Steuerung.Show(this);
+            m_Eingangstuer_Steuerung.ShowDialog(this);
         }
 
         private void HouseControllLayer_KeyDown(object sender, KeyEventArgs e)
@@ -81,13 +81,15 @@ namespace HouseControl
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ((MainMenuLayer)Owner).close_House_Control();
+            this.Visible = false;
+            this.Owner.Visible = true;
+            //((MainMenuLayer)Owner).close_House_Control();
         }
 
         private void m_Heizung_Click(object sender, EventArgs e)
         {
             pictureBoxVerdunkeln.Show();
-            m_Heizungs_Steuerung.Show(this);
+            m_Heizungs_Steuerung.ShowDialog(this);
         }
     }
 }

@@ -25,3 +25,9 @@ D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Debug\HomeConnect
 D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\bin\Debug\KnobControl.exe
 D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\bin\Debug\KnobControl.pdb
 D:\Andrei\Uni\Interaktive Systeme\HomeConnect\HouseControl\obj\Debug\HouseControl.Heizungs_Steuerung.resources
+C:\Users\Ben\Desktop\HomeConnect\HouseControl\bin\Debug\KnobControl.exe
+C:\Users\Ben\Desktop\HomeConnect\HouseControl\bin\Debug\KnobControl.pdb
+C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Debug\HomeConnect.csprojResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Debug\HouseControl.Eingangstuer_Steuerung.resources
+C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Debug\HouseControl.Heizungs_Steuerung.resources
+C:\Users\Ben\Desktop\HomeConnect\HouseControl\obj\Debug\HouseControl.HouseBuilderLoading.resources

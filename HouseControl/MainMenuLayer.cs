@@ -18,7 +18,7 @@ namespace HouseControl
         {
             InitializeComponent();
             
-            this.m_HouseControllLayer = new HouseControllLayer();
+            //this.m_HouseControllLayer = new HouseControllLayer();
        
         }
 
@@ -26,8 +26,14 @@ namespace HouseControl
         {
             //TODO: Implement Blueprint Loading and switch to Control Mode
             //MessageBox.Show("Es muss ein Grundriss erstellt werden, um die Wohnung zu steuern!");
+            m_HouseControllLayer = new HouseControllLayer();
 
-            m_HouseControllLayer.Show(this);
+            HouseBuilderLoading loadingScreen = new HouseBuilderLoading("Grundriss wird geladen");
+            loadingScreen.ShowDialog();
+
+            this.Visible = false;
+            m_HouseControllLayer.ShowDialog(this);
+            //m_HouseControllLayer.Show(this);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -39,8 +45,9 @@ namespace HouseControl
 
         public void close_House_Control()
         {
-            m_HouseControllLayer.Hide();
-            this.Activate();
+
+            //m_HouseControllLayer.Hide();
+            //this.Activate();
         }
     }
 }

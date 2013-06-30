@@ -34,17 +34,21 @@
             this.m_radioButton12 = new System.Windows.Forms.RadioButton();
             this.m_radioButton13 = new System.Windows.Forms.RadioButton();
             this.m_panel1 = new System.Windows.Forms.Panel();
+            this.m_Regler1 = new System.Windows.Forms.PictureBox();
             this.m_panel2 = new System.Windows.Forms.Panel();
+            this.m_Regler2 = new System.Windows.Forms.PictureBox();
             this.m_radioButton23 = new System.Windows.Forms.RadioButton();
             this.m_radioButton20 = new System.Windows.Forms.RadioButton();
             this.m_radioButton22 = new System.Windows.Forms.RadioButton();
             this.m_radioButton21 = new System.Windows.Forms.RadioButton();
             this.m_panel3 = new System.Windows.Forms.Panel();
+            this.m_Regler3 = new System.Windows.Forms.PictureBox();
             this.m_radioButton33 = new System.Windows.Forms.RadioButton();
             this.m_radioButton30 = new System.Windows.Forms.RadioButton();
             this.m_radioButton32 = new System.Windows.Forms.RadioButton();
             this.m_radioButton31 = new System.Windows.Forms.RadioButton();
             this.m_panel4 = new System.Windows.Forms.Panel();
+            this.m_Regler4 = new System.Windows.Forms.PictureBox();
             this.m_radioButton43 = new System.Windows.Forms.RadioButton();
             this.m_radioButton40 = new System.Windows.Forms.RadioButton();
             this.m_radioButton42 = new System.Windows.Forms.RadioButton();
@@ -56,24 +60,20 @@
             this.m_Feuer3 = new System.Windows.Forms.PictureBox();
             this.m_Feuer2 = new System.Windows.Forms.PictureBox();
             this.m_Feuer1 = new System.Windows.Forms.PictureBox();
-            this.m_Regler4 = new System.Windows.Forms.PictureBox();
-            this.m_Regler3 = new System.Windows.Forms.PictureBox();
-            this.m_Regler2 = new System.Windows.Forms.PictureBox();
-            this.m_Regler1 = new System.Windows.Forms.PictureBox();
             this.m_Herd = new System.Windows.Forms.PictureBox();
             this.button_OK = new System.Windows.Forms.Button();
             this.m_panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_Regler1)).BeginInit();
             this.m_panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_Regler2)).BeginInit();
             this.m_panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_Regler3)).BeginInit();
             this.m_panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_Regler4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Feuer4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Feuer3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Feuer2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Feuer1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_Regler4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_Regler3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_Regler2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_Regler1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Herd)).BeginInit();
             this.SuspendLayout();
             // 
@@ -136,6 +136,16 @@
             this.m_panel1.Size = new System.Drawing.Size(187, 165);
             this.m_panel1.TabIndex = 7;
             // 
+            // m_Regler1
+            // 
+            this.m_Regler1.Image = global::HouseControl.Properties.Resources.Control_Knob;
+            this.m_Regler1.Location = new System.Drawing.Point(46, 36);
+            this.m_Regler1.Name = "m_Regler1";
+            this.m_Regler1.Size = new System.Drawing.Size(100, 100);
+            this.m_Regler1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.m_Regler1.TabIndex = 2;
+            this.m_Regler1.TabStop = false;
+            // 
             // m_panel2
             // 
             this.m_panel2.Controls.Add(this.m_Regler2);
@@ -147,6 +157,16 @@
             this.m_panel2.Name = "m_panel2";
             this.m_panel2.Size = new System.Drawing.Size(187, 165);
             this.m_panel2.TabIndex = 8;
+            // 
+            // m_Regler2
+            // 
+            this.m_Regler2.Image = global::HouseControl.Properties.Resources.Control_Knob;
+            this.m_Regler2.Location = new System.Drawing.Point(46, 36);
+            this.m_Regler2.Name = "m_Regler2";
+            this.m_Regler2.Size = new System.Drawing.Size(100, 100);
+            this.m_Regler2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.m_Regler2.TabIndex = 2;
+            this.m_Regler2.TabStop = false;
             // 
             // m_radioButton23
             // 
@@ -207,6 +227,16 @@
             this.m_panel3.Size = new System.Drawing.Size(187, 165);
             this.m_panel3.TabIndex = 9;
             // 
+            // m_Regler3
+            // 
+            this.m_Regler3.Image = global::HouseControl.Properties.Resources.Control_Knob;
+            this.m_Regler3.Location = new System.Drawing.Point(46, 36);
+            this.m_Regler3.Name = "m_Regler3";
+            this.m_Regler3.Size = new System.Drawing.Size(100, 100);
+            this.m_Regler3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.m_Regler3.TabIndex = 2;
+            this.m_Regler3.TabStop = false;
+            // 
             // m_radioButton33
             // 
             this.m_radioButton33.AutoSize = true;
@@ -265,6 +295,16 @@
             this.m_panel4.Name = "m_panel4";
             this.m_panel4.Size = new System.Drawing.Size(187, 165);
             this.m_panel4.TabIndex = 8;
+            // 
+            // m_Regler4
+            // 
+            this.m_Regler4.Image = global::HouseControl.Properties.Resources.Control_Knob;
+            this.m_Regler4.Location = new System.Drawing.Point(46, 36);
+            this.m_Regler4.Name = "m_Regler4";
+            this.m_Regler4.Size = new System.Drawing.Size(100, 100);
+            this.m_Regler4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.m_Regler4.TabIndex = 2;
+            this.m_Regler4.TabStop = false;
             // 
             // m_radioButton43
             // 
@@ -380,46 +420,6 @@
             this.m_Feuer1.Visible = false;
             this.m_Feuer1.Paint += new System.Windows.Forms.PaintEventHandler(this.m_Feuer1_Paint);
             // 
-            // m_Regler4
-            // 
-            this.m_Regler4.Image = global::HouseControl.Properties.Resources.Control_Knob;
-            this.m_Regler4.Location = new System.Drawing.Point(46, 36);
-            this.m_Regler4.Name = "m_Regler4";
-            this.m_Regler4.Size = new System.Drawing.Size(100, 100);
-            this.m_Regler4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.m_Regler4.TabIndex = 2;
-            this.m_Regler4.TabStop = false;
-            // 
-            // m_Regler3
-            // 
-            this.m_Regler3.Image = global::HouseControl.Properties.Resources.Control_Knob;
-            this.m_Regler3.Location = new System.Drawing.Point(46, 36);
-            this.m_Regler3.Name = "m_Regler3";
-            this.m_Regler3.Size = new System.Drawing.Size(100, 100);
-            this.m_Regler3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.m_Regler3.TabIndex = 2;
-            this.m_Regler3.TabStop = false;
-            // 
-            // m_Regler2
-            // 
-            this.m_Regler2.Image = global::HouseControl.Properties.Resources.Control_Knob;
-            this.m_Regler2.Location = new System.Drawing.Point(46, 36);
-            this.m_Regler2.Name = "m_Regler2";
-            this.m_Regler2.Size = new System.Drawing.Size(100, 100);
-            this.m_Regler2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.m_Regler2.TabIndex = 2;
-            this.m_Regler2.TabStop = false;
-            // 
-            // m_Regler1
-            // 
-            this.m_Regler1.Image = global::HouseControl.Properties.Resources.Control_Knob;
-            this.m_Regler1.Location = new System.Drawing.Point(46, 36);
-            this.m_Regler1.Name = "m_Regler1";
-            this.m_Regler1.Size = new System.Drawing.Size(100, 100);
-            this.m_Regler1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.m_Regler1.TabIndex = 2;
-            this.m_Regler1.TabStop = false;
-            // 
             // m_Herd
             // 
             this.m_Herd.BackColor = System.Drawing.SystemColors.Control;
@@ -461,24 +461,24 @@
             this.Controls.Add(this.button_OK);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Herd_Steuerung";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Herd_Steuerung";
             this.m_panel1.ResumeLayout(false);
             this.m_panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_Regler1)).EndInit();
             this.m_panel2.ResumeLayout(false);
             this.m_panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_Regler2)).EndInit();
             this.m_panel3.ResumeLayout(false);
             this.m_panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_Regler3)).EndInit();
             this.m_panel4.ResumeLayout(false);
             this.m_panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_Regler4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Feuer4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Feuer3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Feuer2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Feuer1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_Regler4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_Regler3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_Regler2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_Regler1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Herd)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

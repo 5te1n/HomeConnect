@@ -114,9 +114,10 @@
             this.Controls.Add(this.Herd);
             this.Controls.Add(this.Light1);
             this.Controls.Add(this.pictureBoxVerdunkeln);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "HouseControllLayer";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.HouseControllLayer_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.m_Heizung)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Bells)).EndInit();

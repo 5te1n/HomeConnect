@@ -193,7 +193,7 @@
             this.Controls.Add(this.button_OK);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Heizungs_Steuerung";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Heizungs_Steuerung";
             ((System.ComponentModel.ISupportInitialize)(this.m_Heizung_Picture)).EndInit();
             this.ResumeLayout(false);
