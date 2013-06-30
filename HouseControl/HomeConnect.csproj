@@ -166,6 +166,7 @@
     <Content Include="Resources\fridge_icon.png" />
     <Content Include="Resources\Gluehbirne_ON.gif" />
     <Content Include="Resources\Grundriss.jpg" />
+    <Content Include="Resources\Grundriss_Verdunkelt.jpg" />
     <Content Include="Resources\heizungerror.png" />
     <Content Include="Resources\Heizung_Aus.jpg" />
     <Content Include="Resources\Herd_Aus.jpg" />

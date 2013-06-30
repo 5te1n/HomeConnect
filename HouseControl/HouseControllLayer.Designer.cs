@@ -34,9 +34,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HouseControllLayer));
             this.m_Blink_Timer_Show = new System.Windows.Forms.Timer(this.components);
             this.m_Blink_Timer_Hide = new System.Windows.Forms.Timer(this.components);
-            this.m_Temperatur = new System.Windows.Forms.Label();
+            this.m_Alles_Aus_Button = new System.Windows.Forms.Button();
             this.m_Panel = new System.Windows.Forms.Panel();
+            this.Light3 = new System.Windows.Forms.PictureBox();
+            this.Light4 = new System.Windows.Forms.PictureBox();
+            this.Light2 = new System.Windows.Forms.PictureBox();
             this.Herd = new System.Windows.Forms.PictureBox();
+            this.m_Temperatur = new System.Windows.Forms.Label();
             this.m_Bells = new System.Windows.Forms.PictureBox();
             this.m_Progress_Circel = new System.Windows.Forms.PictureBox();
             this.m_Eingangstuer = new System.Windows.Forms.PictureBox();
@@ -46,11 +50,10 @@
             this.m_Washer = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBoxVerdunkeln = new System.Windows.Forms.PictureBox();
-            this.Light2 = new System.Windows.Forms.PictureBox();
-            this.Light4 = new System.Windows.Forms.PictureBox();
-            this.Light3 = new System.Windows.Forms.PictureBox();
-            this.m_Alles_Aus_Button = new System.Windows.Forms.Button();
             this.m_Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Light3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Light4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Light2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Herd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Bells)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Progress_Circel)).BeginInit();
@@ -60,9 +63,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.m_Feuer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Washer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVerdunkeln)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Light2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Light4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Light3)).BeginInit();
             this.SuspendLayout();
             // 
             // m_Blink_Timer_Show
@@ -77,12 +77,12 @@
             this.m_Blink_Timer_Hide.Interval = 750;
             this.m_Blink_Timer_Hide.Tick += new System.EventHandler(this.m_Blink_Timer_Hide_Tick);
             // 
-            // m_Temperatur
+            // m_Alles_Aus_Button
             // 
-            resources.ApplyResources(this.m_Temperatur, "m_Temperatur");
-            this.m_Temperatur.BackColor = System.Drawing.Color.Silver;
-            this.m_Temperatur.ForeColor = System.Drawing.Color.Maroon;
-            this.m_Temperatur.Name = "m_Temperatur";
+            this.m_Alles_Aus_Button.BackgroundImage = global::HouseControl.Properties.Resources.Turn_Off_icon;
+            resources.ApplyResources(this.m_Alles_Aus_Button, "m_Alles_Aus_Button");
+            this.m_Alles_Aus_Button.Name = "m_Alles_Aus_Button";
+            this.m_Alles_Aus_Button.UseVisualStyleBackColor = true;
             // 
             // m_Panel
             // 
@@ -102,6 +102,33 @@
             this.m_Panel.Controls.Add(this.m_Washer);
             this.m_Panel.Name = "m_Panel";
             // 
+            // Light3
+            // 
+            this.Light3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Light3, "Light3");
+            this.Light3.Image = global::HouseControl.Properties.Resources.Gluehbirne_OFF;
+            this.Light3.Name = "Light3";
+            this.Light3.TabStop = false;
+            this.Light3.Click += new System.EventHandler(this.Llight3_Click);
+            // 
+            // Light4
+            // 
+            this.Light4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Light4, "Light4");
+            this.Light4.Image = global::HouseControl.Properties.Resources.Gluehbirne_OFF;
+            this.Light4.Name = "Light4";
+            this.Light4.TabStop = false;
+            this.Light4.Click += new System.EventHandler(this.Light4_Click);
+            // 
+            // Light2
+            // 
+            this.Light2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.Light2, "Light2");
+            this.Light2.Image = global::HouseControl.Properties.Resources.Gluehbirne_OFF;
+            this.Light2.Name = "Light2";
+            this.Light2.TabStop = false;
+            this.Light2.Click += new System.EventHandler(this.Light2_Click);
+            // 
             // Herd
             // 
             this.Herd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -110,6 +137,13 @@
             this.Herd.Name = "Herd";
             this.Herd.TabStop = false;
             this.Herd.Click += new System.EventHandler(this.Herd_Click);
+            // 
+            // m_Temperatur
+            // 
+            resources.ApplyResources(this.m_Temperatur, "m_Temperatur");
+            this.m_Temperatur.BackColor = System.Drawing.Color.Silver;
+            this.m_Temperatur.ForeColor = System.Drawing.Color.Maroon;
+            this.m_Temperatur.Name = "m_Temperatur";
             // 
             // m_Bells
             // 
@@ -183,44 +217,10 @@
             // 
             // pictureBoxVerdunkeln
             // 
-            this.pictureBoxVerdunkeln.Image = global::HouseControl.Properties.Resources.Verdunkelndes_Grau_halb_transparent;
+            this.pictureBoxVerdunkeln.Image = global::HouseControl.Properties.Resources.Grundriss_Verdunkelt;
             resources.ApplyResources(this.pictureBoxVerdunkeln, "pictureBoxVerdunkeln");
             this.pictureBoxVerdunkeln.Name = "pictureBoxVerdunkeln";
             this.pictureBoxVerdunkeln.TabStop = false;
-            // 
-            // Light2
-            // 
-            this.Light2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.Light2, "Light2");
-            this.Light2.Image = global::HouseControl.Properties.Resources.Gluehbirne_OFF;
-            this.Light2.Name = "Light2";
-            this.Light2.TabStop = false;
-            this.Light2.Click += new System.EventHandler(this.Light2_Click);
-            // 
-            // Light4
-            // 
-            this.Light4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.Light4, "Light4");
-            this.Light4.Image = global::HouseControl.Properties.Resources.Gluehbirne_OFF;
-            this.Light4.Name = "Light4";
-            this.Light4.TabStop = false;
-            this.Light4.Click += new System.EventHandler(this.Light4_Click);
-            // 
-            // Light3
-            // 
-            this.Light3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.Light3, "Light3");
-            this.Light3.Image = global::HouseControl.Properties.Resources.Gluehbirne_OFF;
-            this.Light3.Name = "Light3";
-            this.Light3.TabStop = false;
-            this.Light3.Click += new System.EventHandler(this.Llight3_Click);
-            // 
-            // m_Alles_Aus_Button
-            // 
-            this.m_Alles_Aus_Button.BackgroundImage = global::HouseControl.Properties.Resources.Turn_Off_icon;
-            resources.ApplyResources(this.m_Alles_Aus_Button, "m_Alles_Aus_Button");
-            this.m_Alles_Aus_Button.Name = "m_Alles_Aus_Button";
-            this.m_Alles_Aus_Button.UseVisualStyleBackColor = true;
             // 
             // HouseControllLayer
             // 
@@ -239,6 +239,9 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.HouseControllLayer_KeyDown);
             this.m_Panel.ResumeLayout(false);
             this.m_Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Light3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Light4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Light2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Herd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Bells)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Progress_Circel)).EndInit();
@@ -248,9 +251,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.m_Feuer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Washer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVerdunkeln)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Light2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Light4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Light3)).EndInit();
             this.ResumeLayout(false);
 
         }
