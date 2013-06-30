@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button_OK = new System.Windows.Forms.Button();
             this.m_Heizung_Picture = new System.Windows.Forms.PictureBox();
             this.m_Temperatur_Label = new System.Windows.Forms.Label();
@@ -40,6 +41,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.m_Heizungstimer = new System.Windows.Forms.Timer(this.components);
+            this.m_Aus_Button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.m_Heizung_Picture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -92,6 +95,7 @@
             this.m_Heizungs_Regler.TabIndex = 7;
             this.m_Heizungs_Regler.TabStop = false;
             this.m_Heizungs_Regler.Value = 0;
+            this.m_Heizungs_Regler.ValueChanged += new KnobControl.ValueChangedEventHandler(this.m_Heizungs_Regler_ValueChanged);
             // 
             // label0
             // 
@@ -174,11 +178,32 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "Heizung";
             // 
+            // m_Heizungstimer
+            // 
+            this.m_Heizungstimer.Enabled = true;
+            this.m_Heizungstimer.Interval = 2000;
+            this.m_Heizungstimer.Tick += new System.EventHandler(this.m_Heizungstimer_Tick);
+            // 
+            // m_Aus_Button
+            // 
+            this.m_Aus_Button.BackgroundImage = global::HouseControl.Properties.Resources.Turn_Off_icon;
+            this.m_Aus_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.m_Aus_Button.Font = new System.Drawing.Font("Miramonte", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_Aus_Button.ForeColor = System.Drawing.Color.Black;
+            this.m_Aus_Button.Location = new System.Drawing.Point(12, 360);
+            this.m_Aus_Button.Name = "m_Aus_Button";
+            this.m_Aus_Button.Size = new System.Drawing.Size(130, 128);
+            this.m_Aus_Button.TabIndex = 16;
+            this.m_Aus_Button.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.m_Aus_Button.UseVisualStyleBackColor = true;
+            this.m_Aus_Button.Click += new System.EventHandler(this.m_Aus_Button_Click);
+            // 
             // Heizungs_Steuerung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 500);
+            this.Controls.Add(this.m_Aus_Button);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -215,5 +240,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Timer m_Heizungstimer;
+        private System.Windows.Forms.Button m_Aus_Button;
     }
 }

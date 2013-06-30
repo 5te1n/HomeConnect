@@ -145,7 +145,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;m_Feuer.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="m_Washer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -172,16 +172,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;m_Washer.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="m_Heizung.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="m_Heizung.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 111</value>
+    <value>372, 102</value>
   </data>
   <data name="m_Heizung.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 70</value>
+    <value>77, 79</value>
   </data>
   <data name="m_Heizung.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -199,7 +199,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;m_Heizung.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -260,7 +260,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="m_Bells.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -287,7 +287,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;m_Bells.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="m_Eingangstuer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -311,7 +311,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;m_Eingangstuer.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="Herd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -338,7 +338,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Herd.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="Light1.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -368,7 +368,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Light1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="pictureBoxVerdunkeln.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -398,7 +398,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBoxVerdunkeln.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <metadata name="m_Blink_Timer_Show.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>341, 17</value>
@@ -406,6 +406,36 @@
   <metadata name="m_Blink_Timer_Hide.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>505, 17</value>
   </metadata>
+  <data name="m_Temperatur.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="m_Temperatur.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt, style=Bold</value>
+  </data>
+  <data name="m_Temperatur.Location" type="System.Drawing.Point, System.Drawing">
+    <value>382, 156</value>
+  </data>
+  <data name="m_Temperatur.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 25</value>
+  </data>
+  <data name="m_Temperatur.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="m_Temperatur.Text" xml:space="preserve">
+    <value>18 °C</value>
+  </data>
+  <data name="&gt;&gt;m_Temperatur.Name" xml:space="preserve">
+    <value>m_Temperatur</value>
+  </data>
+  <data name="&gt;&gt;m_Temperatur.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_Temperatur.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_Temperatur.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -414,9 +444,6 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1366, 749</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>

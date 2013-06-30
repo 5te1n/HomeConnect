@@ -43,6 +43,7 @@
             this.pictureBoxVerdunkeln = new System.Windows.Forms.PictureBox();
             this.m_Blink_Timer_Show = new System.Windows.Forms.Timer(this.components);
             this.m_Blink_Timer_Hide = new System.Windows.Forms.Timer(this.components);
+            this.m_Temperatur = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.m_Feuer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Washer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_Heizung)).BeginInit();
@@ -138,11 +139,19 @@
             this.m_Blink_Timer_Hide.Interval = 750;
             this.m_Blink_Timer_Hide.Tick += new System.EventHandler(this.m_Blink_Timer_Hide_Tick);
             // 
+            // m_Temperatur
+            // 
+            resources.ApplyResources(this.m_Temperatur, "m_Temperatur");
+            this.m_Temperatur.BackColor = System.Drawing.Color.Transparent;
+            this.m_Temperatur.ForeColor = System.Drawing.Color.Maroon;
+            this.m_Temperatur.Name = "m_Temperatur";
+            // 
             // HouseControllLayer
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
+            this.Controls.Add(this.m_Temperatur);
             this.Controls.Add(this.m_Feuer);
             this.Controls.Add(this.m_Washer);
             this.Controls.Add(this.m_Heizung);
@@ -167,6 +176,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Light1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVerdunkeln)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -183,5 +193,6 @@
         private System.Windows.Forms.PictureBox m_Feuer;
         private System.Windows.Forms.Timer m_Blink_Timer_Show;
         private System.Windows.Forms.Timer m_Blink_Timer_Hide;
+        private System.Windows.Forms.Label m_Temperatur;
     }
 }

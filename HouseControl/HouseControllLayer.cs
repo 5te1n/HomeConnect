@@ -26,6 +26,7 @@ namespace HouseControl
             m_HerdSteuerung = new Herd_Steuerung();
             m_Eingangstuer_Steuerung = new Eingangstuer_Steuerung();
             m_Heizungs_Steuerung = new Heizungs_Steuerung();
+            m_Heizungs_Steuerung.m_HouseControll = this;
             m_Waschmaschine = new Waschmaschienen_Steuerung();
 
             m_Bells.Parent = m_Eingangstuer;
@@ -35,6 +36,9 @@ namespace HouseControl
             m_Feuer.Parent = Herd;
             m_Feuer.Location = new Point(18,18);
             m_Feuer.Hide();
+
+            m_Temperatur.Parent = m_Heizung;
+            m_Temperatur.Location = new Point(5,50);
             
         }
 
@@ -85,6 +89,11 @@ namespace HouseControl
         {
             m_Waschmaschine.Hide();
             pictureBoxVerdunkeln.Hide();
+        }
+
+        public void Update_Temperatur(int Temp)
+        {
+            m_Temperatur.Text = Temp + " °C";
         }
 
         private void m_Eingangstuer_Click(object sender, EventArgs e)
